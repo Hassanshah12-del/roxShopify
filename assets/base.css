@@ -3603,6 +3603,15 @@ ul.rb-tab li.colored{
   color: #fff;
 }
 
+.outer-rb-tab {
+  padding: 8px;
+  border: 1px solid #E6E6E6;
+  border-radius: 12px;
+  max-width: 1262px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @keyframes indeterminateAnimation {
   0% {
     transform: translateX(-20%) scaleX(0);
