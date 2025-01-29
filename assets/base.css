@@ -3586,11 +3586,8 @@ details-disclosure > details {
 
 ul.rb-tab {
   display: flex;
-  padding-inline: 15px;
-  margin: 0 auto;
   list-style: none;
-  max-width: 1262px;
-  width: 100%;
+  padding: 0;
 }
 
 ul.rb-tab li {
