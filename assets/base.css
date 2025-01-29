@@ -3600,6 +3600,12 @@ ul.rb-tab {
   margin-top: 40px;
 }
 
+ul.rb-metal-filter label span {
+  font-size: 14px;
+  color: #848484;
+  font-weight: 400;
+}
+
 
 
 ul.rb-shape-filter {
