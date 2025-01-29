@@ -79,8 +79,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".card--standard > .card__content .card__information a {padding-left: 0; padding-right: 0; font-size: 12.8px; font-weight: 400; color: #000;}",
-        " .card--standard>.card__content .card__information {padding-inline: 0; }"
+        ".card--standard > .card__content .card__information a {padding-left: 0; padding-right: 0; font-size: 12.8px; font-weight: 400; color: #000; letter-spacing: 0;}",
+        ".card--standard > .card__content .card__information {padding-inline: 0;}"
       ],
       "settings": {
         "products_per_page": 16,
