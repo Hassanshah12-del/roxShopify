@@ -3614,6 +3614,12 @@ ul.rb-shape-filter {
   padding: 0;
 }
 
+ul.rb-metal-filter {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
 ul.rb-tab li {
   width: 100%;
   font-weight: 500;
