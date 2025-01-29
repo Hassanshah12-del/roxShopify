@@ -3599,6 +3599,7 @@ ul.rb-tab li {
   margin: 0;
   height: 36px;
   line-height: 36px;
+  font-family: 'Inter';
 }
 
 ul.rb-tab li.colored{
