@@ -52,6 +52,9 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-hero__title {text-align: center; margin-block: 40px; color: #292929; font-weight: 600;}"
+      ],
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
