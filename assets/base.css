@@ -3585,6 +3585,8 @@ details-disclosure > details {
   display: block;
 }
 
+
+
 @keyframes indeterminateAnimation {
   0% {
     transform: translateX(-20%) scaleX(0);
