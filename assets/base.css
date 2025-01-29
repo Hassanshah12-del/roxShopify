@@ -3606,7 +3606,9 @@ ul.rb-metal-filter label span {
   font-weight: 400;
 }
 
-
+ul.rb-metal-filter label.active span{
+  color: #848484;
+}
 
 ul.rb-shape-filter {
   padding: 0;
