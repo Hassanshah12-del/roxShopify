@@ -3584,6 +3584,15 @@ details-disclosure > details {
   width: 42px;
 }
 
+ul.rb-tab {
+  display: flex;
+  padding-inline: 15px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+
+
 @keyframes indeterminateAnimation {
   0% {
     transform: translateX(-20%) scaleX(0);
