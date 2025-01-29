@@ -3641,9 +3641,13 @@ ul.rb-tab li.colored{
   padding: 8px;
   border: 1px solid #E6E6E6;
   border-radius: 12px;
-  max-width: 1262px;
+  max-width: 1232px;
   width: 100%;
   margin: 0 auto;
+}
+
+.outer-rb-tab-pad {
+  padding-inline: 15px;
 }
 
 @keyframes indeterminateAnimation {
