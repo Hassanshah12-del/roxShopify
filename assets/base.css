@@ -3600,6 +3600,10 @@ ul.rb-tab {
   margin-top: 40px;
 }
 
+ul.rb-shape-filter {
+  padding: 0;
+}
+
 ul.rb-tab li {
   width: 100%;
   font-weight: 500;
