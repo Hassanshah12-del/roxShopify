@@ -3601,7 +3601,9 @@ ul.rb-tab li {
   border-radius: 8px;
 }
 
-li.colored
+ul.rb-tab li.colored{
+  background-color: #20578D;
+}
 
 @keyframes indeterminateAnimation {
   0% {
