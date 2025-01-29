@@ -3615,6 +3615,12 @@ ul.rb-shape-filter {
   margin-top: 5px;
 }
 
+.shape-type-title {
+  color: #292929;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 ul.rb-metal-filter {
   display: flex;
   list-style: none;
