@@ -3603,6 +3603,7 @@ ul.rb-tab li {
 
 ul.rb-tab li.colored{
   background-color: #20578D;
+  color: #fff;
 }
 
 @keyframes indeterminateAnimation {
