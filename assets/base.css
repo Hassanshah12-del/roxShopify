@@ -3593,7 +3593,15 @@ ul.rb-tab {
   width: 100%;
 }
 
+ul.rb-tab li {
+  width: 100%;
+  font-weight: 500;
+  color: #1E1E1E;
+  text-align: center;
+  border-radius: 8px;
+}
 
+li.colored
 
 @keyframes indeterminateAnimation {
   0% {
