@@ -3589,6 +3589,8 @@ ul.rb-tab {
   padding-inline: 15px;
   margin: 0 auto;
   list-style: none;
+  max-width: 1262px;
+  width: 100%;
 }
 
 
