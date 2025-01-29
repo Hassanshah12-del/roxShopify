@@ -33,7 +33,8 @@
       ],
       "custom_css": [
         ".banner__text.rte.body p {color: #fff; line-height: 22.4px;}",
-        ".banner__heading.inline-richtext {font-size: 32px; margin-bottom: 20px;}"
+        ".banner__heading.inline-richtext {font-size: 32px; margin-bottom: 20px;}",
+        ".banner--mobile-bottom .banner__box {padding-inline: 15px; max-width: 780px;}"
       ],
       "settings": {
         "image": "shopify://shop_images/image_1.png",
