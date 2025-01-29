@@ -3594,11 +3594,13 @@ ul.rb-tab {
 .shape-type {
   display: flex;
   justify-content: space-between;
-  max-width: 1292px;
+  max-width: 1262px;
   margin: 0 auto;
   padding-inline: 15px;
   margin-top: 40px;
 }
+
+
 
 ul.rb-shape-filter {
   padding: 0;
