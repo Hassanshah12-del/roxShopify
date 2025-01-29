@@ -3612,6 +3612,7 @@ ul.rb-metal-filter label.active span{
 
 ul.rb-shape-filter {
   padding: 0;
+  margin-top: 5px;
 }
 
 ul.rb-metal-filter {
