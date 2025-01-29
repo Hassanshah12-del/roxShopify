@@ -3597,6 +3597,8 @@ ul.rb-tab li {
   text-align: center;
   border-radius: 8px;
   margin: 0;
+  height: 36px;
+  line-height: 36px;
 }
 
 ul.rb-tab li.colored{
