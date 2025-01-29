@@ -13,7 +13,7 @@
     "logo_width": 90,
     "type_header_font": "inter_n7",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "inter_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -202,7 +202,7 @@
         "settings": {
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
-          "text": "#fff",
+          "text": "#ffffff",
           "button": "#121212",
           "button_label": "rgba(0,0,0,0)",
           "secondary_button_label": "#121212",
