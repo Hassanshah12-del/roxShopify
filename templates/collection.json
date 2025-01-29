@@ -31,7 +31,10 @@
         "heading_Pc3Vk3",
         "text_QLNBLq"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".banner__text.rte.body p {color: #fff; line-height: 22.4px;}",
+        ".banner__heading.inline-richtext {font-size: 32px; margin-bottom: 20px;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/image_1.png",
         "image_overlay_opacity": 0,
