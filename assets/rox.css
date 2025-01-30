@@ -159,3 +159,15 @@
     letter-spacing: 0;
     line-height: 1;
 }
+
+.select-type select {
+    width: 100%;
+    max-width: 240px;
+    border: 1px solid #D9D9D9;
+    background: #fff;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #1E1E1E;
+    padding-inline: 10px;
+}
