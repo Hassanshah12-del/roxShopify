@@ -37,6 +37,7 @@
 
   .product-info-media-main {
     display: flex;
+    margin-top: 34px;
 }
   
   .shape-type {
