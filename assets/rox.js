@@ -42,4 +42,9 @@ function ThumbnailPlugin(main) {
     [ThumbnailPlugin(this.slider)]
   )
 
-  
+  document.querySelectorAll('.product-list li').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelector('.step-1').style.display = 'none';
+        document.querySelector('.step-2').style.display = 'block';
+    });
+});
