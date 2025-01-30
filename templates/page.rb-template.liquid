@@ -12,10 +12,8 @@
 </style>
 
 
-<script>
-    jQuery(document).ready(function(){
-      $("p").click(function(){
-        $(this).hide();
-      });
-    });
-    </script>
+<button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+    
+    <p id="demo"></p>
