@@ -115,12 +115,14 @@
     width: 100%;
     padding-inline: 15px;
     overflow: hidden;
+    ma
   }
 
   .product-list {
     display: flex;
     padding: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .product-list li {
