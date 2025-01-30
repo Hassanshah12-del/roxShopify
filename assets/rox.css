@@ -204,3 +204,19 @@
 .background-title-text {
     background: url(/cdn/shop/files/image_1.png?v=1738127605&width=2400);
 }
+
+.banner__text.rte p {
+    color: #fff;
+    line-height: 22.4px;
+  }
+  .banner__heading.inline-richtext {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .banner--mobile-bottom .banner__box {
+    padding-inline: 15px;
+    max-width: 780px;
+  }
+  .banner--mobile-bottom .banner__media {
+    position: absolute;
+  }
