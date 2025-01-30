@@ -41,3 +41,5 @@ function ThumbnailPlugin(main) {
     },
     [ThumbnailPlugin(this.slider)]
   )
+
+  
