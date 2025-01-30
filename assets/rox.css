@@ -239,3 +239,7 @@
   #my-keen-slider img {
     border-radius: 24px;
 }
+
+.product-info-media #thumbnails {
+    margin-top: 17px;
+}
