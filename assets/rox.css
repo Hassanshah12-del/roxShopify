@@ -185,3 +185,13 @@
     margin-right: .5rem;
     width: 26px;
 }
+
+.rb-metal-filter li input {
+    height: 0;
+    left: -999px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+}
