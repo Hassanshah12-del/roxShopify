@@ -213,7 +213,7 @@
     font-size: 32px;
     margin-bottom: 20px;
   }
-  .banner--mobile-bottom .banner__box {
+  .banner--mobile-bottom.banner__box {
     padding-inline: 15px;
     max-width: 780px;
   }
