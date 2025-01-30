@@ -48,9 +48,9 @@ function ThumbnailPlugin(main) {
         document.querySelector('#step-2').style.display = 'block';
         document.querySelector('.step-1').classList.remove('active');
         document.querySelector('.step-2').classList.add('active');
-        if (window.slider) {
+        if (slider) {
             setTimeout(() => {
-                window.slider.resize();
+                slider.resize();
             }, 300); // Small delay to ensure the DOM updates first
         }
     });
