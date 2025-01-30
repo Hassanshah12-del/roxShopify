@@ -174,5 +174,19 @@
       .outer-rb-tab-pad {
         padding-inline: 15px;
       }
+
+      .rb-shape-filter {
+        display: flex;
+        list-style: none;
+      }
+      .rb-shape-filter .hover-img {
+        display: none;
+      }
+      .rb-shape-filter li:hover .hover-img {
+        display: inline-block;
+      }
+      .rb-shape-filter li:hover img:not(.hover-img) {
+        display: none;
+      }
       
 </style>
