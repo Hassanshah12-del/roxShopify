@@ -38,6 +38,7 @@
 
   .product-info-media-main {
     display: flex;
+    gap: 20px;
     margin-top: 34px;
 }
   
