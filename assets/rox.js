@@ -47,6 +47,6 @@ function ThumbnailPlugin(main) {
         document.querySelector('#step-1').style.display = 'none';
         document.querySelector('#step-2').style.display = 'block';
         document.querySelector('.step-1').classList.remove('active');
-        document.querySelector('.step-2').classList.remove('active');
+        document.querySelector('.step-2').classList.add('active');
     });
 });
