@@ -34,6 +34,10 @@
     gap: 10px;
     justify-content: center;
   }
+
+  .product-info-media-main {
+    display: flex;
+}
   
   .shape-type {
     display: flex;
