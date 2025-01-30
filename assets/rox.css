@@ -88,7 +88,7 @@
     max-width: 294.42px;
   }
   
-  ul.rb-tab li.colored{
+  ul.rb-tab li.active{
     background-color: #20578D;
     color: #fff;
   }
