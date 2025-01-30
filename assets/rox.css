@@ -116,3 +116,9 @@
     padding-inline: 15px;
     overflow: hidden;
   }
+
+  .product-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
