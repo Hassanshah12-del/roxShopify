@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 .keen-slider.thumbnail img {
     width: 122px;
 }
+
 .rb-shape-filter li img {
     width: 42px;
   }
