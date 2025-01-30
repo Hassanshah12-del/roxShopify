@@ -146,3 +146,10 @@
     letter-spacing: 0;
     text-decoration: none;
 }
+
+.product-list li .price__regular {
+    font-size: 12.8px;
+    color: #939292;
+    letter-spacing: 0;
+    line-height: 1;
+}
