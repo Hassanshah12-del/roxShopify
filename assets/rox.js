@@ -46,6 +46,6 @@ function ThumbnailPlugin(main) {
     item.addEventListener('click', function() {
         document.querySelector('#step-1').style.display = 'none';
         document.querySelector('#step-2').style.display = 'block';
-        document.querySelector('#step-1');
+        document.querySelector('.step-1');
     });
 });
