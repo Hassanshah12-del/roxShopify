@@ -50,7 +50,7 @@ function ThumbnailPlugin(main) {
         document.querySelector('.step-2').classList.add('active');
         if (slider) {
             setTimeout(() => {
-                slider.resize();
+                slider.update();
             }, 300); // Small delay to ensure the DOM updates first
         }
     });
