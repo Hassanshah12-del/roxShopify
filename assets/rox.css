@@ -113,5 +113,6 @@
   .owncontainer{
     max-width: 1232px;
     width: 100%;
-    pa
+    padding-inline: 15px;
+    overflow: hidden;
   }
