@@ -36,7 +36,7 @@ function ThumbnailPlugin(main) {
       initial: 0,
       slides: {
         perView: 5,
-        spacing: 10,
+        spacing: 24,
       },
     },
     [ThumbnailPlugin(this.slider)]
