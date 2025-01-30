@@ -52,7 +52,7 @@ function ThumbnailPlugin(main) {
             setTimeout(() => {
                 slider.update();
                 thumbnails.update();
-            }, 300); // Small delay to ensure the DOM updates first
+            }, 300);
         }
     });
 });
