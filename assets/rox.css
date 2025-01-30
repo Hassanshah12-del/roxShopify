@@ -111,11 +111,11 @@
   }
   
   .owncontainer{
-    max-width: 1232px;
+    max-width: 1262px;
     width: 100%;
     padding-inline: 15px;
     overflow: hidden;
-    ma
+    margin: 0 auto;
   }
 
   .product-list {
