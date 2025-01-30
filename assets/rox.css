@@ -225,3 +225,11 @@
     margin: 0 auto;
     width: 100%;
   }
+
+  .collection-hero__title {
+    text-align: center;
+    margin-top: 40px;
+    color: #292929;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
