@@ -234,3 +234,7 @@
     font-weight: 600;
     margin-block: 40px;
   }
+
+  #my-keen-slider img {
+    border-radius: 24px;
+}
