@@ -94,6 +94,7 @@
     line-height: 36px;
     font-family: Inter;
     max-width: 294.42px;
+    cursor: pointer;
   }
   
   ul.rb-tab li.active{
