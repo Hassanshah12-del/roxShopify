@@ -137,6 +137,7 @@
 
 .product-list li {
     width: 25%;
+    margin-bottom: 20px;
 }
 
 .product-list li a{
