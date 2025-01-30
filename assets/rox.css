@@ -203,6 +203,7 @@
 
 .background-title-text {
     background: url(/cdn/shop/files/image_1.png?v=1738127605&width=2400);
+    text-align: center;
 }
 
 .banner__text.rte p {
