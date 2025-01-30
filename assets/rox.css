@@ -7,7 +7,7 @@
 }
 
 .product-list li img {
-    max-width: 292px;
+    max-width: 100%;
     border-radius: 8px;
 }
 
@@ -137,4 +137,12 @@
 
 .product-list li {
     width: 25%;
+}
+
+.product-list li a{
+    font-size: 12.8px;
+    font-weight: 400;
+    color: #292929;
+    letter-spacing: 0;
+    text-decoration: none;
 }
