@@ -6,6 +6,11 @@
     width: 122px;
 }
 
+.product-list li img {
+    max-width: 292px;
+    border-radius: 8px;
+}
+
 .rb-shape-filter li img {
     width: 42px;
   }
