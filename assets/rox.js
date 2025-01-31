@@ -83,6 +83,12 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
   });
 });
 
+function nextStep(){
+if (slider && thumbnails) {
+  slider.update();
+  thumbnails.update();
+}
+}
 
 function nextStep(){
 if(document.querySelector('#step-2-2').style.display == 'none'){
