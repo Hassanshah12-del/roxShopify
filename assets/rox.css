@@ -429,7 +429,7 @@ ul.rb-tab li.process{
 .birthstones-buttons button {
   border: 0;
   background: transparent;
-  width: 16.66%;
+  width: calc(16.66% - 8.3px);
 }
 
 .birthstones-buttons button img{
