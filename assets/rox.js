@@ -70,8 +70,8 @@ document.querySelectorAll('.rb-tab .step-1').forEach(item => {
 
 document.querySelectorAll('.rb-tab .step-2').forEach(item => {
   item.addEventListener('click', function() {
-      document.querySelector('#step-1').style.display = 'block';
-      document.querySelector('#step-2').style.display = 'none';
+      document.querySelector('#step-2-1').style.display = 'block';
+      document.querySelector('#step-2-2').style.display = 'none';
       document.querySelector('.step-2').classList.remove('process');
       document.querySelector('.step-3').classList.remove('process');
   });
