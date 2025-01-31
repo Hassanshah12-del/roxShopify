@@ -107,6 +107,7 @@ else{
 
 function ringSummary(){
   document.querySelector('#step-3').style.display = 'none';
+  
 }
 
 document.querySelectorAll('.rb-tab .step-4').forEach(item => {
