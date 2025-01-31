@@ -286,3 +286,9 @@
   position: absolute;
   visibility: hidden;
 }
+
+.product-option__button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
