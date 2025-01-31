@@ -78,11 +78,15 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
 
 
 function nextStep(){
+if(){
+  
+}
   document.querySelector('#step-2-1').style.display = 'none';
   document.querySelector('#step-2-2').style.display = 'block';
   document.querySelector('.step-2').classList.remove('process');
   document.querySelector('.step-3').classList.add('process');
   document.querySelector('.step-2').classList.add('active');
+
 }
 
 document.querySelectorAll('.rb-tab .step-3').forEach(item => {
