@@ -70,4 +70,5 @@ function nextStep(){
   document.querySelector('#step-2-1').style.display = 'none';
   document.querySelector('#step-2-2').style.display = 'block';
   document.querySelector('.step-2').classList.remove('process');
+  document.querySelector('.step-2').classList.remove('active');
 }
