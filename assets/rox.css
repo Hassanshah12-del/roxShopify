@@ -421,3 +421,8 @@ ul.rb-tab li.process{
   margin-bottom: 8px;
 }
 
+.birthstones-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
