@@ -104,6 +104,11 @@ else{
 }
 }
 
+
+function ringSummary(){
+  
+}
+
 document.querySelectorAll('.rb-tab .step-4').forEach(item => {
   item.addEventListener('click', function() {
     document.querySelector('#step-1').style.display = 'none';
