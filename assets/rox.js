@@ -60,6 +60,7 @@ function ThumbnailPlugin(main) {
         //         slider.update();
         //         thumbnails.update();
         // }
+        sliderUpdate();
     });
 });
 
@@ -131,6 +132,7 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
     document.querySelector('.step-3').classList.add('active');
     document.querySelector('.step-4').classList.add('process');
 // 
+sliderUpdate();
   });
 });
 
@@ -141,6 +143,7 @@ document.querySelectorAll('.rb-tab .step-3').forEach(item => {
     //   slider.update();
     //   thumbnails.update();
     // }
+    sliderUpdate();
     document.querySelector('#step-1').style.display = 'none';
     document.querySelector('#step-2').style.display = 'block'
     document.querySelector('#step-3').style.display = 'none';
