@@ -68,7 +68,7 @@ document.querySelectorAll('.rb-tab .step-1').forEach(item => {
         document.querySelector('#step-3').style.display = 'none';
         document.querySelector('.step-3').classList.remove('active');
         document.querySelector('.outer-rb-tab-pad').style.display = 'block';
-
+        document.querySelector('.step-4').style.pointerEvents = 'auto';
     });
 });
 
@@ -83,6 +83,7 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
       document.querySelector('#step-3').style.display = 'none';
       document.querySelector('.step-4').classList.remove('process');
       document.querySelector('.outer-rb-tab-pad').style.display = 'block';
+      document.querySelector('.step-4').style.pointerEvents = 'auto';
   });
 });
 
@@ -116,7 +117,7 @@ function ringSummary(){
   document.querySelector('#step-2-1').style.display = 'none';
   document.querySelector('#next-step').style.display = 'none';
   document.querySelector('.outer-rb-tab-pad').style.display = 'block';
-  document.querySelector('.your-class').style.pointerEvents = 'none';
+  document.querySelector('.step-4').style.pointerEvents = 'none';
   if (slider && thumbnails) {
     slider.update();
     thumbnails.update();
