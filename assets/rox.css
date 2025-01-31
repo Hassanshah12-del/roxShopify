@@ -318,3 +318,10 @@ ul.rb-tab li.process{
   color: #20578D;
   border: 1px solid #20578D;
 }
+
+.bespoke-item__image {
+  height: 80px;
+  width: 80px;
+}
+
+.bespoke-item__image {
