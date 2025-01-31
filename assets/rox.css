@@ -480,7 +480,3 @@ main#MainContent {
   border-bottom: 1px solid;
   padding-bottom: 5px;
 }
-
-div#my-keen-slider .keen-slider__slide {
-  min-width: 100% !important;
-}
