@@ -42,7 +42,7 @@ function ThumbnailPlugin(main) {
     [ThumbnailPlugin(this.slider)]
   )
 
-  document.querySelectorAll('.product-list li , .rb-tab .step-1').forEach(item => {
+  document.querySelectorAll('.product-list li ,.rb-tab .step-1').forEach(item => {
     item.addEventListener('click', function() {
         document.querySelector('#step-1').style.display = 'none';
         document.querySelector('#step-2').style.display = 'block';
