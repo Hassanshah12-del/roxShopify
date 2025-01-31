@@ -77,6 +77,7 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
       document.querySelector('.step-3').classList.remove('process');
       document.querySelector('.step-3').classList.remove('active');
       document.querySelector('#step-3').style.display = 'none';
+      document.querySelector('.step-3').classList.remove('process');
   });
 });
 
@@ -94,6 +95,7 @@ else{
   document.querySelector('#step-3').style.display = 'block';
   document.querySelector('#step-2').style.display = 'none';
   document.querySelector('.step-3').classList.remove('process');
+  document.querySelector('.step-2').classList.remove('process');
   document.querySelector('.step-2').classList.add('active');
   document.querySelector('.step-3').classList.add('active');
   document.querySelector('.step-4').classList.add('process');
