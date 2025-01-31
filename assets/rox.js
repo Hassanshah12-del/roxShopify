@@ -49,10 +49,10 @@ function ThumbnailPlugin(main) {
         document.querySelector('.step-2').classList.add('process');
 
         if (slider && thumbnails) {
-            setTimeout(() => {
+            // setTimeout(() => {
                 slider.update();
                 thumbnails.update();
-            }, 300);
+            // }, 300);
         }
     });
 });
