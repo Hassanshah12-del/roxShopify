@@ -373,6 +373,8 @@ ul.rb-tab li.process{
 .radio-box label {
   padding-left: 26px;
   position: relative;
+  color: #1E1E1E;
+  font-size: 14px;
 }
 
 .radio-box {
