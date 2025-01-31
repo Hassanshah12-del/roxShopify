@@ -121,7 +121,6 @@ function ringSummary(){
   document.querySelector('.outer-rb-tab-pad').style.display = 'block';
   document.querySelector('.step-4').style.pointerEvents = 'none';
   document.querySelector('#step-2-3').style.display = 'block';
-  document.querySelector('#step-2-3').style.display = 'none';
   if (slider && thumbnails) {
     slider.update();
     thumbnails.update();
