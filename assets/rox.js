@@ -149,6 +149,7 @@ document.querySelectorAll('.rb-tab .step-3 , #back-button').forEach(item => {
     document.querySelector('.step-3').classList.add('process');
     document.querySelector('#next-step').style.display = 'block';
     document.querySelector('.outer-rb-tab-pad').style.display = 'block';
+    document.querySelector('.step-4').style.pointerEvents = 'auto';
     if (slider && thumbnails) {
       slider.update();
       thumbnails.update();
