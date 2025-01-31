@@ -78,7 +78,7 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
 });
 
 document.querySelectorAll('.rb-tab .step-2').forEach(item => {
-  item.addEventListener('click', function()
+  item.addEventListener('click', function() {
 function nextStep(){
   document.querySelector('#step-2-1').style.display = 'none';
   document.querySelector('#step-2-2').style.display = 'block';
