@@ -102,7 +102,7 @@ else{
   document.querySelector('.step-2').classList.add('active');
   document.querySelector('.step-3').classList.add('active');
   document.querySelector('.step-4').classList.add('process');
-  
+  document.querySelector('.outer-rb-tab-pad').style.display = 'none';
 }
 }
 
