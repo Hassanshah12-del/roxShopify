@@ -416,3 +416,8 @@ ul.rb-tab li.process{
 .birthstones-section{
   margin-top: 24px;
 }
+ 
+.birthstones-section .option-type-title-type {
+  margin-bottom: 8px;
+}
+
