@@ -77,8 +77,7 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
   });
 });
 
-document.querySelectorAll('.rb-tab .step-2').forEach(item => {
-  item.addEventListener('click', function() {
+
 function nextStep(){
   document.querySelector('#step-2-1').style.display = 'none';
   document.querySelector('#step-2-2').style.display = 'block';
@@ -86,3 +85,9 @@ function nextStep(){
   document.querySelector('.step-3').classList.add('process');
   document.querySelector('.step-2').classList.add('active');
 }
+
+document.querySelectorAll('.rb-tab .step-2').forEach(item => {
+  item.addEventListener('click', function() {
+    nextStep(); // Call nextStep function on click
+  });
+});
