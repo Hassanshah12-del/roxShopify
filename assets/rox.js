@@ -91,6 +91,7 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
 
 
 function nextStep(){
+  document.querySelector('#step-2-3').style.display = 'none';
 if(document.querySelector('#step-2-2').style.display == 'none'){
   document.querySelector('#step-2-1').style.display = 'none';
   document.querySelector('#step-2-2').style.display = 'block';
@@ -153,6 +154,7 @@ document.querySelectorAll('.rb-tab .step-3 , #back-button').forEach(item => {
     document.querySelector('#next-step').style.display = 'block';
     document.querySelector('.outer-rb-tab-pad').style.display = 'block';
     document.querySelector('.step-4').style.pointerEvents = 'auto';
+    document.querySelector('#step-2-3').style.display = 'none';
     if (slider && thumbnails) {
       slider.update();
       thumbnails.update();
