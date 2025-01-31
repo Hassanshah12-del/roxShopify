@@ -122,7 +122,10 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
     document.querySelector('.step-2').classList.add('active');
     document.querySelector('.step-3').classList.add('active');
     document.querySelector('.step-4').classList.add('process');
-
+    if (slider && thumbnails) {
+      slider.update();
+      thumbnails.update();
+    }
   });
 });
 
