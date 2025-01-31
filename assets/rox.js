@@ -135,7 +135,7 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
   });
 });
 
-document.querySelectorAll('.rb-tab .step-3').forEach(item => {
+document.querySelectorAll('.rb-tab .step-3 , #back-button').forEach(item => {
   item.addEventListener('click', function() {
     nextStep();
     document.querySelector('#step-1').style.display = 'none';
