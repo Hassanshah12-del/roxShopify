@@ -108,6 +108,8 @@ else{
 function ringSummary(){
   document.querySelector('#step-3').style.display = 'none';
   document.querySelector('#step-2').style.display = 'block';
+  document.querySelector('#step-2-2').style.display = 'block';
+  #step-2-2
 }
 
 document.querySelectorAll('.rb-tab .step-4').forEach(item => {
