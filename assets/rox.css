@@ -315,4 +315,5 @@ ul.rb-tab li.process{
 
 .product-option__button input[type=radio]:checked~label{
   color: #20578D;
+  border: 1px solid #20578D;
 }
