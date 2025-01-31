@@ -42,12 +42,12 @@ function ThumbnailPlugin(main) {
     [ThumbnailPlugin(this.slider)]
   )
 
-  // function sliderUpdate(){
-  //   if (slider && thumbnails) {
-  //     slider.update();
-  //     thumbnails.update();
-  //   }
-  //   }
+  function sliderUpdate(){
+    if (slider && thumbnails) {
+      slider.update();
+      thumbnails.update();
+    }
+    }
 
   document.querySelectorAll('.product-list li ,.rb-tab .step-2').forEach(item => {
     item.addEventListener('click', function() {
