@@ -47,12 +47,9 @@ function ThumbnailPlugin(main) {
         document.querySelector('#step-1').style.display = 'none';
         document.querySelector('#step-2').style.display = 'block';
         document.querySelector('.step-2').classList.add('process');
-
         if (slider && thumbnails) {
-            // setTimeout(() => {
                 slider.update();
                 thumbnails.update();
-            // }, 300);
         }
     });
 });
