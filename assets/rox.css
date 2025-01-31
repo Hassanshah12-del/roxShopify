@@ -398,3 +398,11 @@ ul.rb-tab li.process{
   font-weight: 500;
 }
 
+.option-type-title-type {
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 32px;
+  color: #292929;
+}
+
+
