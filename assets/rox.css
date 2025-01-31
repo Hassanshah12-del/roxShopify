@@ -471,3 +471,12 @@ main#MainContent {
 .box-image img{
   width: 100%;
 }
+
+.birthstones-buttons button:hover{
+  cursor: pointer;
+}
+
+.birthstones-buttons button:hover span {
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
