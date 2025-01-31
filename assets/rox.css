@@ -424,6 +424,7 @@ ul.rb-tab li.process{
 .birthstones-buttons {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .birthstones-buttons button {
