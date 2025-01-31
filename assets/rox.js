@@ -86,7 +86,7 @@ if(document.querySelector('#step-2-2').style.display = 'none'){
   document.querySelector('.step-2').classList.add('active');
 }
 else{
-  document.querySelector('#step-2-2').style.display = 'block';
+  document.querySelector('#step-4').style.display = 'block';
 }
 }
 
