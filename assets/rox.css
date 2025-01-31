@@ -271,3 +271,11 @@
     cursor: pointer;
     font-weight: 400;
 }
+
+.product-option__button label {
+  color: #757575;
+  background: #F5F5F5;
+  border-radius: 8px;
+  text-transform: capitalize;
+  padding: 10px 8px;
+}
