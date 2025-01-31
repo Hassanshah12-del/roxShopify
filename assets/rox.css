@@ -345,7 +345,6 @@ ul.rb-tab li.process{
   position: absolute;
   top: 4px;
   width: 11px;
-  --tw-bg-opacity: 1;
   background-color: #20578D;
 }
 
@@ -360,6 +359,5 @@ ul.rb-tab li.process{
   position: absolute;
   top: 1px;
   width: 17px;
-  --tw-border-opacity: 1;
   border-color: #20578D;
 }
