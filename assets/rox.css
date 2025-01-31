@@ -327,3 +327,7 @@ ul.rb-tab li.process{
 .bespoke-item__image img{
   width: 100%;
 }
+
+.bespoke-item {
+  display: flex;
+}
