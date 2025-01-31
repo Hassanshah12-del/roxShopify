@@ -332,6 +332,10 @@ ul.rb-tab li.process{
   display: flex;
 }
 
+.radio-box input[type=radio]:checked~label:after {
+  display: inline-block;
+}
+
 .radio-box label:after {
   border-radius: 11px;
   content: "";
@@ -342,5 +346,5 @@ ul.rb-tab li.process{
   top: 4px;
   width: 11px;
   --tw-bg-opacity: 1;
-  background-color: rgb(73 34 24 / var(--tw-bg-opacity));
+  background-color: #20578D;
 }
