@@ -93,6 +93,12 @@ else{
 
 document.querySelectorAll('.rb-tab .step-3').forEach(item => {
   item.addEventListener('click', function() {
+  
+  });
+});
+
+document.querySelectorAll('.rb-tab .step-3').forEach(item => {
+  item.addEventListener('click', function() {
     nextStep();
     if (slider && thumbnails) {
       slider.update();
