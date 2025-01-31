@@ -128,5 +128,6 @@ document.querySelectorAll('.rb-tab .step-3').forEach(item => {
     document.querySelector('#step-3').style.display = 'none';
     document.querySelector('.step-4').classList.remove('process');
     document.querySelector('.step-3').classList.remove('active');
+    document.querySelector('.step-3').classList.add('process');
   });
 });
