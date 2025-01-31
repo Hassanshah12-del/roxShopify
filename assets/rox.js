@@ -142,7 +142,7 @@ document.querySelectorAll('.rb-tab .step-3').forEach(item => {
       setTimeout(() => {
       slider.update();
       thumbnails.update();
-    }, 300);
+    }, 1000);
     }
   });
 });
