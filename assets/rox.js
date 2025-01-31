@@ -68,7 +68,6 @@ document.querySelectorAll('.rb-tab .step-1').forEach(item => {
         document.querySelector('.step-4').classList.remove('process');
         document.querySelector('#step-3').style.display = 'none';
         document.querySelector('.step-3').classList.remove('active');
-        document.querySelector('.outer-rb-tab-pad').style.display = 'block';
         document.querySelector('.step-4').style.pointerEvents = 'auto';
         document.querySelector('#step-2-3').style.display = 'none';
     });
@@ -155,7 +154,6 @@ document.querySelectorAll('.rb-tab .step-3 , #back-button').forEach(item => {
     document.querySelector('.step-3').classList.remove('active');
     document.querySelector('.step-3').classList.add('process');
     document.querySelector('#next-step').style.display = 'block';
-    document.querySelector('.outer-rb-tab-pad').style.display = 'block';
     document.querySelector('.step-4').style.pointerEvents = 'auto';
     document.querySelector('#step-2-3').style.display = 'none';
     if (slider && thumbnails) {
