@@ -117,7 +117,6 @@ function ringSummary(){
   document.querySelector('#step-2-2').style.display = 'none';
   document.querySelector('#step-2-1').style.display = 'none';
   document.querySelector('#next-step').style.display = 'none';
-  document.querySelector('.outer-rb-tab-pad').style.display = 'block';
   document.querySelector('.step-4').style.pointerEvents = 'none';
   document.querySelector('#step-2-3').style.display = 'block';
   if (slider && thumbnails) {
@@ -136,13 +135,11 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
     document.querySelector('.step-2').classList.add('active');
     document.querySelector('.step-3').classList.add('active');
     document.querySelector('.step-4').classList.add('process');
-    document.querySelector('.outer-rb-tab-pad').style.display = 'none';
   });
 });
 
 document.querySelectorAll('#back-summary-button').forEach(item => {
   item.addEventListener('click', function() {
-    document.querySelector('.outer-rb-tab-pad').style.display = 'none';
     document.querySelector('#step-2').style.display = 'none';
     document.querySelector('#step-3').style.display = 'block';
 });
