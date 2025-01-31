@@ -118,7 +118,7 @@ function ringSummary(){
   document.querySelector('#next-step').style.display = 'none';
   document.querySelector('.outer-rb-tab-pad').style.display = 'block';
   document.querySelector('.step-4').style.pointerEvents = 'none';
-  step-2-3
+  document.querySelector('#step-2-3').style.display = 'block';
   if (slider && thumbnails) {
     slider.update();
     thumbnails.update();
