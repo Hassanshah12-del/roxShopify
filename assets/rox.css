@@ -463,3 +463,11 @@ main#MainContent {
   display: flex;
 }
 
+.box-image {
+  height: 57px;
+  width: 57px;
+}
+
+.box-image {
+  width: 57px;
+}
