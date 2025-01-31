@@ -144,7 +144,7 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
 
 document.querySelectorAll('#back-summary-button').forEach(item => {
   item.addEventListener('click', function() {
-
+      
 });
 });
 
