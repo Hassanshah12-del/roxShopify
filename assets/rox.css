@@ -310,3 +310,8 @@ ul.rb-tab li.process{
   background: #20578D1A;
   color: #20578D;
 }
+
+
+.product-option__button input[type=radio]:checked~label{
+  color: #20578D;
+}
