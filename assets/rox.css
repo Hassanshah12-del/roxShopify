@@ -331,3 +331,16 @@ ul.rb-tab li.process{
 .bespoke-item {
   display: flex;
 }
+
+.radio-box label:after {
+  border-radius: 11px;
+  content: "";
+  display: none;
+  height: 11px;
+  left: 3px;
+  position: absolute;
+  top: 4px;
+  width: 11px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(73 34 24 / var(--tw-bg-opacity));
+}
