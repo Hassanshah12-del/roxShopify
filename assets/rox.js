@@ -103,7 +103,7 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
     document.querySelector('#step-2').style.display = 'none';
     document.querySelector('.step-3').classList.remove('process');
     document.querySelector('.step-3').classList.add('active');
-    
+    document.querySelector('.step-4').classList.add('process');
   });
 });
 
