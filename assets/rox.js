@@ -139,10 +139,10 @@ document.querySelectorAll('.rb-tab .step-3').forEach(item => {
     document.querySelector('.step-3').classList.remove('active');
     document.querySelector('.step-3').classList.add('process');
     if (slider && thumbnails) {
-
+      setTimeout(() => {
       slider.update();
       thumbnails.update();
-    
+    }, 300);
     }
   });
 });
