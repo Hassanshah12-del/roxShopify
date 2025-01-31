@@ -42,6 +42,18 @@ function ThumbnailPlugin(main) {
     [ThumbnailPlugin(this.slider)]
   )
 
+  document.querySelectorAll('.rb-tab .step-3').forEach(item => {
+    item.addEventListener('click', function() {
+      nextStep();
+      if (slider && thumbnails) {
+        slider.update();
+        thumbnails.update();
+      }
+      document.querySelector('#step-1').style.display = 'none';
+      document.querySelector('#step-2').style.display = 'block';
+    });
+  });
+
   document.querySelectorAll('.product-list li ,.rb-tab .step-2').forEach(item => {
     item.addEventListener('click', function() {
         document.querySelector('#step-1').style.display = 'none';
@@ -85,14 +97,3 @@ function nextStep(){
   document.querySelector('.step-2').classList.add('active');
 }
 
-document.querySelectorAll('.rb-tab .step-3').forEach(item => {
-  item.addEventListener('click', function() {
-    nextStep();
-    if (slider && thumbnails) {
-      slider.update();
-      thumbnails.update();
-    }
-    document.querySelector('#step-1').style.display = 'none';
-    document.querySelector('#step-2').style.display = 'block';
-  });
-});
