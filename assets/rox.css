@@ -256,6 +256,7 @@
 
 .product-info-main .option-type-title {
     font-size: 18px;
+    margin-bottom: 17px;
 }
 
 .next-step-button {
@@ -293,6 +294,6 @@
   gap: 15px;
 }
 
-ul.rb-metal-filter{
+.product-info-main ul.rb-metal-filter{
   margin-top: 0;
 }
