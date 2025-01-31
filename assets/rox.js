@@ -146,7 +146,7 @@ document.querySelectorAll('#back-summary-button').forEach(item => {
   item.addEventListener('click', function() {
     document.querySelector('.outer-rb-tab-pad').style.display = 'none';
     document.querySelector('#step-2').style.display = 'none';
-    document.querySelector('#step-2').style.display = 'none';
+    document.querySelector('#step-3').style.display = 'block';
 });
 });
 
