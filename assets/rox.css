@@ -407,4 +407,8 @@ ul.rb-tab li.process{
   color: #292929;
 }
 
-
+.bespoke-item {
+  border-bottom: 1px solid #F5F5F5;
+  margin-bottom: 26px;
+  padding-bottom: 10px;
+}
