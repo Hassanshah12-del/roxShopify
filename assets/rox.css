@@ -468,6 +468,6 @@ main#MainContent {
   width: 57px;
 }
 
-.box-image {
-  width: 57px;
+.box-image img{
+  width: 100%;
 }
