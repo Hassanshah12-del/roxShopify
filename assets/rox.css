@@ -426,3 +426,8 @@ ul.rb-tab li.process{
   flex-wrap: wrap;
 }
 
+.birthstones-buttons button {
+  border: 0;
+  background: transparent;
+}
+
