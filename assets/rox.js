@@ -49,10 +49,10 @@ function ThumbnailPlugin(main) {
         document.querySelector('.step-2').classList.add('process');
         document.querySelector('#step-2-1').style.display = 'block';
         document.querySelector('#step-2-2').style.display = 'none';
-        if (slider && thumbnails) {
-                slider.update();
-                thumbnails.update();
-        }
+        // if (slider && thumbnails) {
+        //         slider.update();
+        //         thumbnails.update();
+        // }
     });
 });
 
