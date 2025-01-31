@@ -374,3 +374,8 @@ ul.rb-tab li.process{
   padding-left: 26px;
   position: relative;
 }
+
+.radio-box {
+  line-height: 1;
+}
+
