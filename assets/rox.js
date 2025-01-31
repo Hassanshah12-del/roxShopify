@@ -110,10 +110,10 @@ function ringSummary(){
   document.querySelector('#step-2').style.display = 'block';
   document.querySelector('#step-2-2').style.display = 'none';
   document.querySelector('#step-2-1').style.display = 'none';
-  if (slider && thumbnails) {
-    slider.update();
-    thumbnails.update();
-}
+//   if (slider && thumbnails) {
+//     slider.update();
+//     thumbnails.update();
+// }
 }
 
 document.querySelectorAll('.rb-tab .step-4').forEach(item => {
