@@ -90,7 +90,8 @@ if(document.querySelector('#step-2-2').style.display == 'none'){
 else{
   document.querySelector('#step-3').style.display = 'block';
   document.querySelector('#step-2').style.display = 'none';
-  
+  document.querySelector('.step-3').classList.remove('process');
+  document.querySelector('.step-3').classList.add('process');
 }
 }
 
