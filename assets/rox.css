@@ -280,6 +280,7 @@
   border-radius: 8px;
   text-transform: capitalize;
   padding: 10px 14.5px;
+  cursor: pointer;
   display: inline-block;
 }
 
