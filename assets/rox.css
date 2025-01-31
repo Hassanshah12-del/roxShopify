@@ -445,3 +445,6 @@ ul.rb-tab li.process{
   margin-bottom: 40px;
 }
 
+main#MainContent {
+  padding-bottom: 40px;
+}
