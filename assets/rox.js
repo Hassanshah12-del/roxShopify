@@ -89,5 +89,6 @@ function nextStep(){
 document.querySelectorAll('.rb-tab .step-3').forEach(item => {
   item.addEventListener('click', function() {
     nextStep();
+    
   });
 });
