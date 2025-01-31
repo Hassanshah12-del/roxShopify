@@ -296,5 +296,10 @@
 
 .product-info-main ul.rb-metal-filter{
   margin-top: 0;
-  
+  margin-bottom: 0;
+}
+
+.product-info-main ,
+.product-info-main .option-types {
+  margin-bottom: 30px;
 }
