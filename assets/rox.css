@@ -330,6 +330,7 @@ ul.rb-tab li.process{
 
 .bespoke-item {
   display: flex;
+  gap: 24px;
 }
 
 .radio-box input[type=radio]:checked~label:after {
