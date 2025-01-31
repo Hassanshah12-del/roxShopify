@@ -67,5 +67,5 @@ document.querySelectorAll('.rb-tab .step-1').forEach(item => {
 
 
 function nextStep(){
-  
+  document.querySelector('#step-2-2').style.display = 'block';
 }
