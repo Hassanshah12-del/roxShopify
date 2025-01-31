@@ -42,12 +42,6 @@ function ThumbnailPlugin(main) {
     [ThumbnailPlugin(this.slider)]
   )
 
-  function sliderUpdate(){
-    if (slider) {
-      slider.update();
-    }
-    }
-
   document.querySelectorAll('.product-list li ,.rb-tab .step-2').forEach(item => {
     item.addEventListener('click', function() {
         document.querySelector('#step-1').style.display = 'none';
@@ -59,7 +53,6 @@ function ThumbnailPlugin(main) {
         //         slider.update();
         //         thumbnails.update();
         // }
-        sliderUpdate();
     });
 });
 
@@ -90,7 +83,12 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
   });
 });
 
-
+function nextStep(){
+if (slider && thumbnails) {
+  slider.update();
+  thumbnails.update();
+}
+}
 
 function nextStep(){
 if(document.querySelector('#step-2-2').style.display == 'none'){
@@ -131,7 +129,6 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
     document.querySelector('.step-3').classList.add('active');
     document.querySelector('.step-4').classList.add('process');
 // 
-sliderUpdate();
   });
 });
 
@@ -142,7 +139,6 @@ document.querySelectorAll('.rb-tab .step-3').forEach(item => {
     //   slider.update();
     //   thumbnails.update();
     // }
-    sliderUpdate();
     document.querySelector('#step-1').style.display = 'none';
     document.querySelector('#step-2').style.display = 'block'
     document.querySelector('#step-3').style.display = 'none';
