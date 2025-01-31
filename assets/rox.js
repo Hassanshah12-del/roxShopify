@@ -92,6 +92,7 @@ document.querySelectorAll('.rb-tab .step-3').forEach(item => {
       slider.update();
       thumbnails.update();
     }
+    this.classList.toggle('active');
     document.querySelector('#step-1').style.display = 'none';
     document.querySelector('#step-2').style.display = 'block';
   });
