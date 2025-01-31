@@ -279,3 +279,10 @@
   text-transform: capitalize;
   padding: 10px 8px;
 }
+
+.product-option__button input[type=radio] {
+  left: -999px;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+}
