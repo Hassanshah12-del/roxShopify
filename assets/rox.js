@@ -64,3 +64,8 @@ document.querySelectorAll('.rb-tab .step-1').forEach(item => {
         document.querySelector('.step-2').classList.remove('process');
     });
 });
+
+
+function nextStep(){
+  
+}
