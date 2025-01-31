@@ -122,20 +122,17 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
     document.querySelector('.step-2').classList.add('active');
     document.querySelector('.step-3').classList.add('active');
     document.querySelector('.step-4').classList.add('process');
-    if (slider && thumbnails) {
-      slider.update();
-      thumbnails.update();
-    }
+// 
   });
 });
 
 document.querySelectorAll('.rb-tab .step-3').forEach(item => {
   item.addEventListener('click', function() {
     nextStep();
-    if (slider && thumbnails) {
-      slider.update();
-      thumbnails.update();
-    }
+    // if (slider && thumbnails) {
+    //   slider.update();
+    //   thumbnails.update();
+    // }
     document.querySelector('#step-1').style.display = 'none';
     document.querySelector('#step-2').style.display = 'block'
     document.querySelector('#step-3').style.display = 'none';
