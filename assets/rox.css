@@ -324,4 +324,6 @@ ul.rb-tab li.process{
   width: 80px;
 }
 
-.bespoke-item__image {
+.bespoke-item__image img{
+  width: 100%;
+}
