@@ -361,3 +361,16 @@ ul.rb-tab li.process{
   width: 17px;
   border-color: #20578D;
 }
+
+.radio-box input[type=radio] {
+  left: -999px;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.radio-box label {
+  padding-left: 26px;
+  position: relative;
+}
