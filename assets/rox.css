@@ -292,3 +292,7 @@
   flex-wrap: wrap;
   gap: 15px;
 }
+
+ul.rb-metal-filter{
+  margin-top: 0;
+}
