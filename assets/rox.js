@@ -67,6 +67,7 @@ document.querySelectorAll('.rb-tab .step-1').forEach(item => {
         document.querySelector('.step-4').classList.remove('process');
         document.querySelector('#step-3').style.display = 'none';
         document.querySelector('.step-3').classList.remove('active');
+        document.querySelector('.outer-rb-tab-pad').style.display = 'block';
 
     });
 });
@@ -81,6 +82,7 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
       document.querySelector('.step-3').classList.remove('active');
       document.querySelector('#step-3').style.display = 'none';
       document.querySelector('.step-4').classList.remove('process');
+      document.querySelector('.outer-rb-tab-pad').style.display = 'block';
   });
 });
 
