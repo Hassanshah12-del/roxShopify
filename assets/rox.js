@@ -43,9 +43,8 @@ function ThumbnailPlugin(main) {
   )
 
   function sliderUpdate(){
-    if (slider && thumbnails) {
+    if (slider) {
       slider.update();
-      thumbnails.update();
     }
     }
 
