@@ -132,15 +132,15 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
 document.querySelectorAll('.rb-tab .step-3').forEach(item => {
   item.addEventListener('click', function() {
     nextStep();
-    if (slider && thumbnails) {
-      slider.update();
-      thumbnails.update();
-    }
     document.querySelector('#step-1').style.display = 'none';
     document.querySelector('#step-2').style.display = 'block'
     document.querySelector('#step-3').style.display = 'none';
     document.querySelector('.step-4').classList.remove('process');
     document.querySelector('.step-3').classList.remove('active');
     document.querySelector('.step-3').classList.add('process');
+    if (slider && thumbnails) {
+      slider.update();
+      thumbnails.update();
+    }
   });
 });
