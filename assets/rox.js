@@ -143,6 +143,7 @@ document.querySelectorAll('.rb-tab .step-3').forEach(item => {
     document.querySelector('.step-3').classList.remove('active');
     document.querySelector('.step-3').classList.add('process');
     document.querySelector('#next-step').style.display = 'block';
+    document.querySelector('.outer-rb-tab-pad').style.display = 'block';
     if (slider && thumbnails) {
       slider.update();
       thumbnails.update();
