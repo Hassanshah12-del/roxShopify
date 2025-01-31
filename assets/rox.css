@@ -453,6 +453,7 @@ main#MainContent {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   display: inline-grid;
   gap: 16px;
+  margin-bottom: 40px;
 }
 
 .birthstone-selection-blocks .box {
