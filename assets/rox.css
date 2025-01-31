@@ -448,3 +448,17 @@ ul.rb-tab li.process{
 main#MainContent {
   padding-bottom: 40px;
 }
+
+.birthstone-selection-blocks {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: inline-grid;
+  gap: 16px;
+}
+
+.birthstone-selection-blocks .box {
+  height: 57px;
+  width: 57px;
+  background: #F9F7F2;
+  display: flex;
+}
+
