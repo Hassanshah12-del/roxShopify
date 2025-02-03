@@ -495,4 +495,11 @@ main#MainContent {
 .step-3-conatiner tr.header {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
+
+.step-3-conatiner tr.header th {
+  border: 0;
+  padding: 0;
+}
+
