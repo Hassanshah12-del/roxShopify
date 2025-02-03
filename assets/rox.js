@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
       header.addEventListener("click", function () {
           let togglearrow = header.querySelector("togglearrow");
           if (togglearrow) {
-            togglearrow.textContent = span.textContent === "-" ? "+" : "-";
+            togglearrow.classList.toggle("active");
           }
 
           let nextElem = header.nextElementSibling;
