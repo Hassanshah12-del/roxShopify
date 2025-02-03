@@ -707,7 +707,7 @@ tr.table-heading th {
   font-size: 16px;
   color: #b3b3b3;
   font-family: Inter;
-  background: url(data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="%231E1E1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>) no-repeat center #fff;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="%231E1E1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center #fff;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
