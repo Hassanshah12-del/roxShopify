@@ -676,3 +676,16 @@ tr.table-heading th {
   margin-bottom: 60px;
 }
 
+.dropdowns-with-button button {
+  background: #2c2c2c;
+  color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  height: 48px;
+  font-family: Inter;
+  font-size: 16px;
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: 400;
+}
