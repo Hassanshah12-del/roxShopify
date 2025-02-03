@@ -237,15 +237,13 @@ document.addEventListener("DOMContentLoaded", function () {
       const option = document.createElement("div");
       option.dataset.value = color.name;
 
-      // Check if img exists before adding an image element
+      // Add an image only if it exists
       option.innerHTML = color.img 
           ? `<img src="${color.img}" alt="${color.name}"> ${color.name}`
           : `${color.name}`;
 
       option.addEventListener("click", function () {
-          selectedDiv.innerHTML = color.img 
-              ? `<img src="${color.img}" alt="${color.name}"> <span>${color.name}</span>` 
-              : `<span>${color.name}</span>`;
+          selectedDiv.textContent = color.name; // Only text, no image
           optionsDiv.style.display = "none";
       });
 
