@@ -169,18 +169,39 @@ document.addEventListener("DOMContentLoaded", function () {
   headers.forEach(header => {
       let nextElement = header.nextElementSibling;
 
+      // Hide all rows initially
       while (nextElement && !nextElement.classList.contains("header")) {
           nextElement.style.display = "none";
           nextElement = nextElement.nextElementSibling;
       }
 
       header.addEventListener("click", function () {
-        this.classList.toggle("active");
-        let togglearrow = this.querySelector(".togglearrow");
-        if (togglearrow) {
-            togglearrow.classList.toggle("active");
-        }
-          let nextElem = header.nextElementSibling;
+          // Close all other active sections
+          headers.forEach(h => {
+              if (h !== this) {
+                  h.classList.remove("active"); // Remove active class from other headers
+                  let otherArrow = h.querySelector(".togglearrow");
+                  if (otherArrow) {
+                      otherArrow.classList.remove("active"); // Remove active class from other arrows
+                  }
+
+                  let otherRow = h.nextElementSibling;
+                  while (otherRow && !otherRow.classList.contains("header")) {
+                      otherRow.style.display = "none";
+                      otherRow.classList.remove("active-body"); // Remove active class from other rows
+                      otherRow = otherRow.nextElementSibling;
+                  }
+              }
+          });
+
+          // Toggle current section
+          this.classList.toggle("active");
+          let togglearrow = this.querySelector(".togglearrow");
+          if (togglearrow) {
+              togglearrow.classList.toggle("active");
+          }
+
+          let nextElem = this.nextElementSibling;
           while (nextElem && !nextElem.classList.contains("header")) {
               nextElem.style.display = nextElem.style.display === "none" ? "table-row" : "none";
               nextElem.classList.toggle("active-body");
