@@ -736,3 +736,8 @@ tr.table-heading th {
   height: 100px;
   margin-left: 10px;
 }
+
+.step-3-conatiner .text-with-image {
+  display: flex;
+}
+
