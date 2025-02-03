@@ -562,3 +562,28 @@ tr.table-heading th {
 .step-3-conatiner .active-body-inner ul li {
   width: 33.33%;
 }
+
+.step-3-button-sets .primary {
+  color: #F5F5F5;
+  border: 0;
+  background: #2C2C2C;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Inter';
+  height: 48px;
+  padding-inline: 16px;
+  cursor: pointer;
+}
+
+
+.step-3-button-sets .primary {
+  color: #F5F5F5;
+  border: 0;
+  background: #2C2C2C;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Inter';
+  height: 48px;
+  padding-inline: 16px;
+  cursor: pointer;
+}
