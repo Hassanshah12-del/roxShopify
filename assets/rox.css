@@ -718,9 +718,10 @@ tr.table-heading th {
   font-family: 'Inter';
 }
 
-.content h4 {
+.step-3-conatiner .content h4 {
   margin-bottom: 21.5px;
   font-size: 19px;
   font-weight: 400;
   color: #000;
 }
+
