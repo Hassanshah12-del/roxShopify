@@ -245,12 +245,10 @@ document.addEventListener("DOMContentLoaded", function () {
       optionsDiv.appendChild(option);
   });
 
-  // Toggle dropdown visibility
   selectedDiv.addEventListener("click", function () {
       optionsDiv.style.display = optionsDiv.style.display === "block" ? "none" : "block";
   });
 
-  // Close dropdown when clicking outside
   document.addEventListener("click", function (event) {
       if (!dropdown.contains(event.target)) {
           optionsDiv.style.display = "none";
