@@ -503,3 +503,9 @@ main#MainContent {
   padding: 0;
 }
 
+.step-3-conatiner .select-heading {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+  color: #292929;
+}
