@@ -712,6 +712,7 @@ tr.table-heading th {
   -webkit-appearance: none;
   appearance: none;
   padding-left: 15px;
+  cursor: pointer;
 }
 
 .step-3-conatiner button.info {
