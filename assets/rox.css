@@ -543,3 +543,7 @@ tr.table-heading th {
 .step-3-conatiner tr.header {
   border-bottom: 1px solid #E6E6E6;
 }
+
+.step-3-conatiner .active-body td {
+  border: 0;
+}
