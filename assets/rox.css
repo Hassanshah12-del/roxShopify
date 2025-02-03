@@ -757,3 +757,8 @@ tr.table-heading th {
   color: #000;
   margin-bottom: 38.5px;
 }
+
+.step-3-conatiner .content p {
+  color: #000;
+  font-size: 14px;
+}
