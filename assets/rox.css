@@ -480,3 +480,10 @@ main#MainContent {
   border-bottom: 1px solid;
   padding-bottom: 5px;
 }
+
+.step-3-conatiner {
+  width: 100%;
+  max-width: 1052px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
