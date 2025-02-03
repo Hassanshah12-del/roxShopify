@@ -500,7 +500,11 @@ main#MainContent {
 
 .step-3-conatiner tr.header th {
   border: 0;
-  padding: 0;
+  padding-inline: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #F3F3F3;
+  padding-block: 15px;
 }
 
 
