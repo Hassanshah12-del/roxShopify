@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
           let nextElem = header.nextElementSibling;
           while (nextElem && !nextElem.classList.contains("header")) {
               nextElem.style.display = nextElem.style.display === "none" ? "table-row" : "none";
-              nextElem.classList.toggle("active");
+              nextElem.classList.toggle("active-body");
               nextElem = nextElem.nextElementSibling;
           }
       });
