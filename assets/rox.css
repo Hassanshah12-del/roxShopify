@@ -619,7 +619,7 @@ tr.table-heading th {
  /* Custom Dropdown Styling */
  .custom-dropdown {
   position: relative;
-  width: 250px;
+  width: 100%;
   font-family: Arial, sans-serif;
 }
 
