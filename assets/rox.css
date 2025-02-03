@@ -546,6 +546,7 @@ tr.table-heading th {
 
 .step-3-conatiner .active-body td {
   border: 0;
+  border-bottom: 1px solid #D9D9D9;
 }
 
 .step-3-conatiner .active-body-inner ul {
