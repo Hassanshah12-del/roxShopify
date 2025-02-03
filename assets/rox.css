@@ -538,3 +538,7 @@ tr.table-heading th {
   border: 0;
   padding: 0px;
 }
+
+.step-3-conatiner tr.header {
+  border-bottom: 1px solid #E6E6E6;
+}
