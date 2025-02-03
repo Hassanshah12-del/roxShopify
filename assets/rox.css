@@ -578,7 +578,7 @@ tr.table-heading th {
 
 .step-3-button-sets .secondary {
   color: #1E1E1E;
-  border: 0;
+  border: 1px solid;
   background: #fff;
   border-radius: 8px;
   font-size: 16px;
