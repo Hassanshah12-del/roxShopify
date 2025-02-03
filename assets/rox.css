@@ -769,13 +769,6 @@ tr.table-heading th {
   font-size: 14px;
 }
 
-
-
-.tab-content {
-	display: grid;
-	place-items: center;
-	height: 100vh;
-}
 .single-btn {
 	display: flex;
 }
@@ -789,10 +782,6 @@ tr.table-heading th {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	width: 200px;
-}
-.t-btn:hover {
-	background-color: #8a98ff;
-	color: #fff;
 }
 
 .btn-active {
