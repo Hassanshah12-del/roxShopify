@@ -648,7 +648,7 @@ tr.table-heading th {
   position: absolute;
   width: 100%;
   background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   display: none;
   max-height: 200px;
   overflow-y: auto;
