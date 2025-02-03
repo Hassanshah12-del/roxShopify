@@ -559,6 +559,9 @@ tr.table-heading th {
 
 .step-3-conatiner .active-body-inner ul li {
   width: 33.33%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1E1E1E;
 }
 
 .step-3-button-sets .primary {
