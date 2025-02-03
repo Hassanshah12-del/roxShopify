@@ -238,6 +238,7 @@ document.addEventListener("DOMContentLoaded", function () {
       option.dataset.value = color.name;
 
       option.addEventListener("click", function () {
+          selectedDiv.innerHTML = `<img src="${color.img}" alt="${color.name}"> <span>${color.name}</span>`;
           optionsDiv.style.display = "none";
       });
 
