@@ -518,3 +518,7 @@ main#MainContent {
 th.togglearrow.active {
   transform: rotate(180deg);
 }
+
+.step-3-conatiner .active-body {
+  background: #FBFBFB;
+}
