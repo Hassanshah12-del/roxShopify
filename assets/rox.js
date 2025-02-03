@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const dropdown = document.querySelector(".custom-dropdown");
-  const selectedDiv = dropdown.querySelector(".dropdown-selected");
+  const selectedDiv = dropdown.querySelector(".dropdown-selected span"); // Get the span inside dropdown-selected
   const optionsDiv = dropdown.querySelector(".dropdown-options");
 
   // Populate custom dropdown
@@ -243,14 +243,13 @@ document.addEventListener("DOMContentLoaded", function () {
           : `${color.name}`;
 
       option.addEventListener("click", function () {
-          selectedDiv.textContent = color.name; // Only text, no image
-          optionsDiv.style.display = "none";
+          selectedDiv.textContent = color.name; // Only update the text inside the span
       });
 
       optionsDiv.appendChild(option);
   });
 
-  selectedDiv.addEventListener("click", function () {
+  dropdown.querySelector(".dropdown-selected").addEventListener("click", function () {
       optionsDiv.style.display = optionsDiv.style.display === "block" ? "none" : "block";
   });
 
@@ -260,6 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+
 
 
 function collapseGrid(me) {
