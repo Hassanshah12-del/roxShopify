@@ -210,3 +210,21 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+
+document.getElementById("moissanite-color-select").addEventListener("change", function () {
+  var selectedOption = this.options[this.selectedIndex];
+  var imgSrc = selectedOption.getAttribute("data-img");
+  var text = selectedOption.text;
+
+  var imgElement = document.getElementById("color-preview-img");
+  var textElement = document.getElementById("color-preview-text");
+
+  if (imgSrc) {
+    imgElement.src = imgSrc;
+    imgElement.hidden = false;
+  } else {
+    imgElement.hidden = true;
+  }
+  textElement.textContent = text;
+});
