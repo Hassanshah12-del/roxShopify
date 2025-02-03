@@ -530,3 +530,11 @@ th.togglearrow.active {
 .step-3-conatiner .active-body {
   background: #FBFBFB;
 }
+
+tr.table-heading th {
+  font-size: 20px;
+  color: #1E1E1E;
+  font-weight: 500;
+  border: 0;
+  padding: 0px;
+}
