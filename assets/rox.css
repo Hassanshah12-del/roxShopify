@@ -674,6 +674,7 @@ tr.table-heading th {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+  gap: 32px;
 }
 
 .dropdowns-with-button button {
