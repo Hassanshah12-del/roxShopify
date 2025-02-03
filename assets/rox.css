@@ -604,3 +604,8 @@ tr.table-heading th {
 .step-3-button-sets .primary.hint {
   padding-inline: 11px;
 }
+
+.step-3-conatiner .active-body-inner ul li span {
+  font-weight: 400;
+  color: #20578D;
+}
