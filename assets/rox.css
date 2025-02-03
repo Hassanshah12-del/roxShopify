@@ -487,3 +487,7 @@ main#MainContent {
   margin: 0 auto;
   padding-inline: 15px;
 }
+
+.step-3-conatiner table {
+  width: 100%;
+}
