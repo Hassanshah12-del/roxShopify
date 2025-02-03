@@ -772,6 +772,7 @@ tr.table-heading th {
 .single-btn {
 	display: flex;
   gap: 24px;
+  margin-bottom: 15px;
 }
 
 .t-btn {
