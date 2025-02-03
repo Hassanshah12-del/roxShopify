@@ -269,10 +269,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
-
 function collapseGrid(me) {
   var content = me.nextElementSibling;
   var textSpan = me.querySelector("span");
@@ -285,3 +281,21 @@ function collapseGrid(me) {
     textSpan.textContent = "More Gemstone Information";
   }
 }
+
+function simpleTab(myBtn) {
+  let tabs = document.getElementsByClassName("tab");
+  for (let i = 0; i < tabs.length; i++) {
+      tabs[i].style.display = "none";
+  }
+  tabs[myBtn].style.display = "block";
+
+  
+  let buttons = document.getElementsByClassName("t-btn");
+  for (let i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("btn-active");
+  }
+  
+  buttons[myBtn].classList.add("btn-active");
+  }
+
+  simpleTab(0);
