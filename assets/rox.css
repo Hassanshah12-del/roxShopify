@@ -503,7 +503,6 @@ main#MainContent {
   padding-inline: 0;
   font-size: 16px;
   font-weight: 400;
-  color: #F3F3F3;
   padding-block: 15px;
 }
 
@@ -517,7 +516,7 @@ main#MainContent {
 
 .step-3-conatiner tr.header.active {
   background: #20578D;
-  color: #fff;
+  color: #F3F3F3;
 }
 
 th.togglearrow.active {
