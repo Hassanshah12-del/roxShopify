@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       header.addEventListener("click", function () {
-          let span = header.querySelector("span");
+          let togglearrow = header.querySelector("togglearrow");
           if (span) {
               span.textContent = span.textContent === "-" ? "+" : "-";
           }
