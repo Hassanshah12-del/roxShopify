@@ -668,3 +668,9 @@ tr.table-heading th {
   margin-right: 10px;
 }
 
+.dropdowns-with-button {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
