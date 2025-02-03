@@ -176,10 +176,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       header.addEventListener("click", function () {
         let togglearrow = this.querySelector(".togglearrow");
-
         if (togglearrow) {
-            togglearrow.classList.toggle("active"); 
-            console.log("Toggled 'active' class:", togglearrow.classList);
+            togglearrow.classList.toggle("active");
         }
           let nextElem = header.nextElementSibling;
           while (nextElem && !nextElem.classList.contains("header")) {
