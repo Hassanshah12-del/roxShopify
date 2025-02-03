@@ -587,3 +587,11 @@ tr.table-heading th {
   padding-inline: 35px;
   cursor: pointer;
 }
+
+.step-3-button-sets {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: right;
+  margin-top: 60px;
+}
