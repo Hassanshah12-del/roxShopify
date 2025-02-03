@@ -214,6 +214,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const colors = [
+    Select Moissanite Colour
+    { name: "
       { name: "D-Colourless", img: "https://themoissanitecompany.com/cdn/shop/files/Colourless_Round_v2.png.png?v=18224178978449191550" },
       { name: "Black", img: "https://themoissanitecompany.com/cdn/shop/files/Black_Round_v2.png.png?v=18224178978449191550" },
       { name: "Champagne 1", img: "https://themoissanitecompany.com/cdn/shop/files/Champagne_1_Round_v2.png.png?v=18224178978449191550" },
