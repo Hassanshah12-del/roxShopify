@@ -517,6 +517,9 @@ main#MainContent {
 
 .step-3-conatiner tr.header.active {
   background: #20578D;
+}
+
+.step-3-conatiner tr.header.active th{
   color: #F3F3F3;
 }
 
