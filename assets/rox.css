@@ -661,6 +661,9 @@ tr.table-heading th {
   padding: 10px;
   cursor: pointer;
   transition: background 0.3s;
+  font-size: 16px;
+  color: #b3b3b3;
+  font-family: Inter;
 }
 
 .dropdown-options div:hover {
