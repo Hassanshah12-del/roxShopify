@@ -536,7 +536,8 @@ tr.table-heading th {
   color: #1E1E1E;
   font-weight: 500;
   border: 0;
-  padding: 0px;
+  padding-block: 0;
+  padding-inline: 5px;
 }
 
 .step-3-conatiner tr.header {
