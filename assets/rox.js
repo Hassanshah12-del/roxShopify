@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       header.addEventListener("click", function () {
-          let togglearrow = header.querySelector(".togglearrow");
+          let togglearrow = this.querySelector(".togglearrow");
           if (togglearrow) {
             togglearrow.classList.toggle("active");
           }
