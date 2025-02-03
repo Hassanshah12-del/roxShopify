@@ -514,3 +514,7 @@ main#MainContent {
   background: #20578D;
   color: #fff;
 }
+
+th.togglearrow.active {
+  transform: rotate(180deg);
+}
