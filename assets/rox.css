@@ -771,7 +771,7 @@ tr.table-heading th {
 
 .single-btn {
 	display: flex;
-  
+  gap: 24px;
 }
 
 .t-btn {
@@ -787,4 +787,14 @@ tr.table-heading th {
 
 .btn-active {
 	background-color: #e4e9fd;
+}
+
+
+.t-btn a {
+  display: block;
+  font-size: 14px;
+  margin-top: 8px;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: underline;
 }
