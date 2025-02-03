@@ -689,3 +689,15 @@ tr.table-heading th {
   cursor: pointer;
   font-weight: 400;
 }
+
+.dropdowns-with-button select {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  background: #fff;
+  box-shadow: none;
+  outline: none;
+  font-size: 16px;
+  color: #B3B3B3;
+  font-family: 'Inter';
+}
