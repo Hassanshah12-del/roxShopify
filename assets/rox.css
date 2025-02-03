@@ -547,3 +547,16 @@ tr.table-heading th {
 .step-3-conatiner .active-body td {
   border: 0;
 }
+
+.active-body-inner ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.active-body-inner ul li {
+  width: 33.33%;
+}
