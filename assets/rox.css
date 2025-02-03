@@ -548,7 +548,7 @@ tr.table-heading th {
   border: 0;
 }
 
-.active-body-inner ul {
+.step-3-conatiner .active-body-inner ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -557,6 +557,6 @@ tr.table-heading th {
   flex-wrap: wrap;
 }
 
-.active-body-inner ul li {
+.step-3-conatiner .active-body-inner ul li {
   width: 33.33%;
 }
