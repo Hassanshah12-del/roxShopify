@@ -490,6 +490,7 @@ main#MainContent {
 
 .step-3-conatiner table {
   width: 100%;
+  box-shadow: none;
 }
 
 .step-3-conatiner tr.header {
