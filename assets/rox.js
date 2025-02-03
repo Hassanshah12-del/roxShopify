@@ -163,6 +163,28 @@ document.querySelectorAll('.rb-tab .step-3 , #back-button').forEach(item => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  let headers = document.querySelectorAll("tr.header");
 
+  headers.forEach(header => {
+      let nextElement = header.nextElementSibling;
 
+      while (nextElement && !nextElement.classList.contains("header")) {
+          nextElement.style.display = "none";
+          nextElement = nextElement.nextElementSibling;
+      }
 
+      header.addEventListener("click", function () {
+          let span = header.querySelector("span");
+          if (span) {
+              span.textContent = span.textContent === "-" ? "+" : "-";
+          }
+
+          let nextElem = header.nextElementSibling;
+          while (nextElem && !nextElem.classList.contains("header")) {
+              nextElem.style.display = nextElem.style.display === "none" ? "table-row" : "none";
+              nextElem = nextElem.nextElementSibling;
+          }
+      });
+  });
+});
