@@ -175,11 +175,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       header.addEventListener("click", function () {
-          let togglearrow = this.querySelector(".togglearrow");
-          if (togglearrow) {
-            togglearrow.classList.toggle("active");
-          }
+        let togglearrow = this.querySelector(".togglearrow"); // Use 'this' inside event listener
 
+        console.log("Clicked header:", this); // Debugging
+        console.log("Found togglearrow:", togglearrow); // Debugging
+
+        if (togglearrow) {
+            togglearrow.classList.toggle("active"); // Toggle class
+            console.log("Toggled 'active' class:", togglearrow.classList);
+        }
           let nextElem = header.nextElementSibling;
           while (nextElem && !nextElem.classList.contains("header")) {
               nextElem.style.display = nextElem.style.display === "none" ? "table-row" : "none";
