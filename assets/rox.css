@@ -771,17 +771,18 @@ tr.table-heading th {
 
 .single-btn {
 	display: flex;
+  
 }
 
 .t-btn {
   padding: 10px;
   cursor: pointer;
-  font-size: 15px;
   width: 100%;
   border: 1px solid #E6E6E6;
   background: transparent;
   border-radius: 8px;
   height: 73px;
+  font-size: 20px;
 }
 
 .btn-active {
