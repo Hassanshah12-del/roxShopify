@@ -795,20 +795,6 @@ tr.table-heading th {
 	color: #fff;
 }
 
-.tab h2 {
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 1px #000;
-	font-size: 45px;
-	margin: 0;
-	padding: 0;
-	text-transform: uppercase;
-}
-.tab p {
-	color: #464646;
-	line-height: 2;
-}
 .btn-active {
 	background-color: #e4e9fd;
-	transform: scaleY(1.05);
-	transform-origin: bottom;
 }
