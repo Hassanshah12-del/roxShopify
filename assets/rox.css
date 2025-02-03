@@ -609,3 +609,9 @@ tr.table-heading th {
   font-weight: 400;
   color: #20578D;
 }
+
+.step-3-conatiner .active-body-inner {
+  padding-inline: 18px;
+  padding-top: 26px;
+}
+
