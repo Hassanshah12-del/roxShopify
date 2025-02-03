@@ -258,11 +258,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function collapseGrid(me) {
   var content = me.nextElementSibling;
-    if (content.style.display === "none") {
-      content.style.display = "block";
-      me.textContent = "Hide Gemstone Information";
-    } else {
-      content.style.display = "none";
-      me.textContent = "More Gemstone Information";
-    }
+  var textSpan = me.querySelector("span");
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    textSpan.textContent = "Hide Gemstone Information";
+  } else {
+    content.style.display = "none";
+    textSpan.textContent = "More Gemstone Information";
+  }
 }
