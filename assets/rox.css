@@ -595,3 +595,8 @@ tr.table-heading th {
   justify-content: right;
   margin-top: 60px;
 }
+
+.step-3-button-sets .table-heading {
+  border-bottom: 1px solid #E6E6E6;
+}
+
