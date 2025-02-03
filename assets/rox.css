@@ -731,3 +731,7 @@ tr.table-heading th {
   color: #000;
 }
 
+.step-3-conatiner .content img {
+  width: 100px;
+  height: 100px;
+}
