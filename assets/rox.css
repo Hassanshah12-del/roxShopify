@@ -509,3 +509,8 @@ main#MainContent {
   font-weight: 400;
   color: #292929;
 }
+
+.step-3-conatiner tr.header.active {
+  background: #20578D;
+  color: #fff;
+}
