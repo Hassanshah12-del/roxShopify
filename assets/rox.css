@@ -772,16 +772,16 @@ tr.table-heading th {
 .single-btn {
 	display: flex;
 }
+
 .t-btn {
-	background-color: #ffffff;
-	border: none;
-	padding: 10px 25px;
-	cursor: pointer;
-	height: 40px;
-	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	width: 200px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  border: 1px solid #E6E6E6;
+  background: transparent;
+  border-radius: 8px;
+  height: 73px;
 }
 
 .btn-active {
