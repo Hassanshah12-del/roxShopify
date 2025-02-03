@@ -598,3 +598,6 @@ tr.table-heading th {
   border-bottom: 1px solid #E6E6E6;
 }
 
+.step-3-button-sets .primary.hint {
+  padding-inline: 11px;
+}
