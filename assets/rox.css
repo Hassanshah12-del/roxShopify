@@ -491,6 +491,7 @@ main#MainContent {
 .step-3-conatiner table {
   width: 100%;
   box-shadow: none;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .step-3-conatiner tr.header {
