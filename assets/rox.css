@@ -613,7 +613,7 @@ tr.table-heading th {
 
 .step-3-conatiner .active-body-inner {
   padding-inline: 18px;
-  padding-top: 26px;
+  padding-block: 26px;
 }
 
  /* Custom Dropdown Styling */
