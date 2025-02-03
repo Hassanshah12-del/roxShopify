@@ -725,7 +725,7 @@ tr.table-heading th {
 }
 
 .step-3-conatiner .content h4 {
-  margin-bottom: 21.5px;
+  margin-bottom: 11.5px;
   font-size: 19px;
   font-weight: 400;
   color: #000;
@@ -751,3 +751,9 @@ tr.table-heading th {
   font-size: 12px;
 }
 
+.step-3-conatiner .content h2 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 38.5px;
+}
