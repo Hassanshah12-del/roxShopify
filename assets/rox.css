@@ -494,8 +494,7 @@ main#MainContent {
 }
 
 .step-3-conatiner tr.header {
-  display: flex;
-  justify-content: space-between;
+  display: table-row;
   cursor: pointer;
 }
 
