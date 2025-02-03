@@ -40,7 +40,7 @@
     "custom_liquid_TzVXFF": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<a href=\"page/configurator\">",
+        "custom_liquid": "<a href=\"page/configurator\">Configurator</a>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
