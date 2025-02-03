@@ -212,3 +212,46 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const colors = [
+      { name: "D-Colourless", img: "https://themoissanitecompany.com/cdn/shop/files/Colourless_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Black", img: "https://themoissanitecompany.com/cdn/shop/files/Black_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Champagne 1", img: "https://themoissanitecompany.com/cdn/shop/files/Champagne_1_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Champagne 2", img: "https://themoissanitecompany.com/cdn/shop/files/Champagne_2_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Champagne 3", img: "https://themoissanitecompany.com/cdn/shop/files/Champagne_3_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Emerald Green", img: "https://themoissanitecompany.com/cdn/shop/files/Emerald_Green_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Grey", img: "https://themoissanitecompany.com/cdn/shop/files/Grey_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Indigo", img: "https://themoissanitecompany.com/cdn/shop/files/Indigo_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Ruby", img: "https://themoissanitecompany.com/cdn/shop/files/Ruby_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Teal", img: "https://themoissanitecompany.com/cdn/shop/files/Teal_Round_v2.png.png?v=18224178978449191550" },
+      { name: "Yellow", img: "https://themoissanitecompany.com/cdn/shop/files/Yellow_Round_v2.png.png?v=18224178978449191550" }
+  ];
+
+  const dropdown = document.querySelector(".custom-dropdown");
+  const selectedDiv = dropdown.querySelector(".dropdown-selected");
+  const optionsDiv = dropdown.querySelector(".dropdown-options");
+
+  // Populate custom dropdown
+  colors.forEach(color => {
+      const option = document.createElement("div");
+      option.innerHTML = `<img src="${color.img}" alt="${color.name}"> ${color.name}`;
+      option.dataset.value = color.name;
+
+      option.addEventListener("click", function () {
+          selectedDiv.innerHTML = `<img src="${color.img}" alt="${color.name}"> <span>${color.name}</span>`;
+          optionsDiv.style.display = "none";
+      });
+
+      optionsDiv.appendChild(option);
+  });
+
+  selectedDiv.addEventListener("click", function () {
+      optionsDiv.style.display = optionsDiv.style.display === "block" ? "none" : "block";
+  });
+
+  document.addEventListener("click", function (event) {
+      if (!dropdown.contains(event.target)) {
+          optionsDiv.style.display = "none";
+      }
+  });
+});
