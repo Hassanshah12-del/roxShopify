@@ -244,21 +244,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
       option.addEventListener("click", function () {
           selectedDiv.textContent = color.name; // Only update the text inside the span
+          optionsDiv.style.display = "none"; // Close the dropdown after selection
       });
 
       optionsDiv.appendChild(option);
   });
 
+  // Toggle dropdown visibility
   dropdown.querySelector(".dropdown-selected").addEventListener("click", function () {
       optionsDiv.style.display = optionsDiv.style.display === "block" ? "none" : "block";
   });
 
+  // Close dropdown when clicking outside
   document.addEventListener("click", function (event) {
       if (!dropdown.contains(event.target)) {
           optionsDiv.style.display = "none";
       }
   });
 });
+
 
 
 
