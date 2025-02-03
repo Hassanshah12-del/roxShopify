@@ -794,15 +794,7 @@ tr.table-heading th {
 	background-color: #8a98ff;
 	color: #fff;
 }
-.tab {
-	display: none;
-	width: 90%;
-	padding: 20px;
-	background-color: #fff;
-	padding: 30px;
-	height: 300px;
-	text-align: center;
-}
+
 .tab h2 {
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke: 1px #000;
