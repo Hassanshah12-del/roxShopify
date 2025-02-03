@@ -491,3 +491,8 @@ main#MainContent {
 .step-3-conatiner table {
   width: 100%;
 }
+
+.step-3-conatiner tr.header {
+  display: flex;
+  justify-content: space-between;
+}
