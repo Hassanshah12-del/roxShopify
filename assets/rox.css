@@ -160,9 +160,9 @@
   .birthstones-buttons {
     justify-content: center;
 }
-
-
-
+ .birthstones-buttons button {
+  width: calc(16.66% - -41px);
+}
 }
 
 .product-list li a{
