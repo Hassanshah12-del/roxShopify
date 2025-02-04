@@ -178,10 +178,17 @@
   width: 100%;
 }
 
- .dropdowns-with-button {
+.step-3-conatiner .dropdowns-with-button {
   gap: 15px;
   flex-wrap: wrap;
 }
+
+.step-3-conatiner .dropdowns-with-button select {
+  width: 100%;
+  height: 48px;
+}
+
+.step-3-conatiner
 
 }
 
