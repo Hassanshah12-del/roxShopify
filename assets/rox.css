@@ -846,3 +846,11 @@ tr.table-heading th {
   margin-bottom: 16px;
 }
 
+.subheading-step-2-3 {
+  font-size: 24px;
+  color: #292929;
+  border-bottom: 1px solid #F5F5F5;
+  padding-bottom: 18px;
+  margin-bottom: 28px;
+}
+
