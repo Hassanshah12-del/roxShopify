@@ -835,3 +835,14 @@ tr.table-heading th {
   margin-bottom: 16px;
 }
 
+.step-2-3 ul {
+  padding: 0;
+  list-style: none;
+  color: #292929;
+}
+
+.step-2-3 ul li{
+  padding: 0;
+  list-style: none;
+  color: #292929;
+}
