@@ -841,8 +841,8 @@ tr.table-heading th {
   color: #292929;
 }
 
-.step-2-3 ul li{
-  padding: 0;
-  list-style: none;
-  color: #292929;
+.step-2-3 ul li {
+  line-height: 1;
+  margin-bottom: 16px;
 }
+
