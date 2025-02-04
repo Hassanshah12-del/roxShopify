@@ -800,7 +800,9 @@ tr.table-heading th {
   text-decoration: underline;
 }
 
- .primary {
+
+
+.step-3-button-sets-summary .primary {
   color: #f5f5f5;
   border: 0;
   background: #2c2c2c;
@@ -810,4 +812,5 @@ tr.table-heading th {
   height: 48px;
   padding-inline: 16px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
