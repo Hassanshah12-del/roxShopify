@@ -174,7 +174,7 @@
   flex-wrap: wrap;
   column-gap: 10px;
 }
-.step-3-conatiner .active-body-inner ul li {
+.step-3-conatiner .table-overflow .active-body-inner ul li {
   width: 100%;
 }
 
