@@ -154,6 +154,9 @@
 
 
 @media screen and (max-width:991px){
+  .dropdowns-with-button button {
+    width: 100%;
+  }
   .product-info-media-main {
     flex-wrap: wrap;
   }
@@ -190,7 +193,7 @@
 
 .step-3-conatiner .custom-dropdown {
   width: 100%;
-
+}
 }
 
 .product-list li a{
