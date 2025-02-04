@@ -157,6 +157,12 @@
   .product-info-media-main {
     flex-wrap: wrap;
   }
+  .birthstones-buttons {
+    justify-content: center;
+}
+
+
+
 }
 
 .product-list li a{
