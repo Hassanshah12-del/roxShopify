@@ -899,3 +899,7 @@ tr.table-heading th {
 .step-2-3 ul.second-ul {
   padding-bottom: 28px;
 }
+
+.table-overflow {
+  overflow-x: auto;
+}
