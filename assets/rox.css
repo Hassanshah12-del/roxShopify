@@ -803,6 +803,7 @@ tr.table-heading th {
 .step-3-button-sets-summary {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .step-3-button-sets-summary .primary {
