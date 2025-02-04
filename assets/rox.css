@@ -819,6 +819,5 @@ tr.table-heading th {
 }
 
 .step-3-button-sets-summary .secondary{
-  display: flex;
-  flex-direction: column;
+ 
 }
