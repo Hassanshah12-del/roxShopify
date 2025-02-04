@@ -152,6 +152,12 @@
 }
 }
 
+
+@media screen and (min-width:991px){
+.product-info-media-main {
+  flex-wrap: wrap;
+}
+
 .product-list li a{
     font-size: 12.8px;
     font-weight: 400;
