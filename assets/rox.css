@@ -166,7 +166,9 @@
 .single-btn {
   flex-wrap: wrap;
 }
-
+ .step-3-conatiner table {
+  width: auto;
+}
 
 }
 
