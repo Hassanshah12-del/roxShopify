@@ -170,6 +170,11 @@
   width: auto;
 }
 
+.step-3-conatiner .active-body-inner ul {
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
 }
 
 .product-list li a{
