@@ -799,3 +799,15 @@ tr.table-heading th {
   cursor: pointer;
   text-decoration: underline;
 }
+
+ .primary {
+  color: #f5f5f5;
+  border: 0;
+  background: #2c2c2c;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Inter;
+  height: 48px;
+  padding-inline: 16px;
+  cursor: pointer;
+}
