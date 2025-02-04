@@ -178,6 +178,11 @@
   width: 100%;
 }
 
+ .dropdowns-with-button {
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 }
 
 .product-list li a{
