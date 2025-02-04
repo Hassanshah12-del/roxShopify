@@ -188,7 +188,8 @@
   height: 48px;
 }
 
-.step-3-conatiner
+.step-3-conatiner .custom-dropdown {
+  width: 100%;
 
 }
 
