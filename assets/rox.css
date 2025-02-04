@@ -146,16 +146,17 @@
 }
 
 @media screen and (min-width:992px){
-.product-list li {
-    width: calc(25% - 15px);
-    margin-bottom: 20px;
-}
+  .product-list li {
+      width: calc(25% - 15px);
+      margin-bottom: 20px;
+  }
 }
 
 
-@media screen and (min-width:991px){
-.product-info-media-main {
-  flex-wrap: wrap;
+@media screen and (max-width:991px){
+  .product-info-media-main {
+    flex-wrap: wrap;
+  }
 }
 
 .product-list li a{
