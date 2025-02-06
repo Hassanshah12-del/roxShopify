@@ -42,134 +42,126 @@ function ThumbnailPlugin(main) {
     [ThumbnailPlugin(this.slider)]
   )
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const step1 = document.querySelector("#step-1");
-    const step2 = document.querySelector("#step-2");
-    const step3 = document.querySelector("#step-3");
-    const step21 = document.querySelector("#step-2-1");
-    const step22 = document.querySelector("#step-2-2");
-    const step23 = document.querySelector("#step-2-3");
-    const nextStepBtn = document.querySelector("#next-step");
-    const step4 = document.querySelector(".step-4");
-  
-    function showStep(targetStep) {
-      step1.style.display = targetStep === 1 ? "block" : "none";
-      step2.style.display = targetStep === 2 ? "block" : "none";
-      step3.style.display = targetStep === 3 ? "block" : "none";
-    }
-  
-    function updateClass(elements, action, className) {
-      elements.forEach(el => el.classList[action](className));
-    }
-  
-    function nextStep() {
-      step23.style.display = "none";
-  
-      if (step22.style.display === "none") {
-        step21.style.display = "none";
-        step22.style.display = "block";
-        updateClass([document.querySelector(".step-2")], "remove", "process");
-        updateClass([document.querySelector(".step-3")], "add", "process");
-        updateClass([document.querySelector(".step-2")], "add", "active");
-      } else {
-        showStep(3);
-        updateClass(
-          [document.querySelector(".step-3"), document.querySelector(".step-2")],
-          "add",
-          "active"
-        );
-        updateClass([step4], "add", "process");
-      }
-    }
-  
-    function ringSummary() {
-      showStep(2);
-      step21.style.display = "none";
-      step22.style.display = "none";
-      step23.style.display = "block";
-      nextStepBtn.style.display = "none";
-      step4.style.pointerEvents = "none";
-  
-      if (slider && thumbnails) {
-        slider.update();
-        thumbnails.update();
-      }
-    }
-  
-    document.addEventListener("click", (e) => {
-      if (e.target.matches(".product-list li, .rb-tab .step-2")) {
-        showStep(2);
-        updateClass([document.querySelector(".step-2")], "add", "process");
-        step21.style.display = "block";
-        step22.style.display = "none";
-        step23.style.display = "none";
-        nextStepBtn.style.display = "block";
+  document.querySelectorAll('.product-list li ,.rb-tab .step-2').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelector('#step-1').style.display = 'none';
+        document.querySelector('#step-2').style.display = 'block';
+        document.querySelector('.step-2').classList.add('process');
+        document.querySelector('#step-2-1').style.display = 'block';
+        document.querySelector('#step-2-2').style.display = 'none';
+        document.querySelector('#next-step').style.display = 'block';
+        document.querySelector('#step-2-3').style.display = 'none';
         if (slider && thumbnails) {
-          slider.update();
-          thumbnails.update();
+                slider.update();
+                thumbnails.update();
         }
-      }
-  
-      if (e.target.matches(".rb-tab .step-1")) {
-        showStep(1);
-        updateClass(
-          [document.querySelector(".step-2"), document.querySelector(".step-3"), step4],
-          "remove",
-          "process"
-        );
-        updateClass([document.querySelector(".step-3")], "remove", "active");
-        step3.style.display = "none";
-        step4.style.pointerEvents = "auto";
-        step23.style.display = "none";
-      }
-  
-      if (e.target.matches(".rb-tab .step-2")) {
-        step21.style.display = "block";
-        step22.style.display = "none";
-        updateClass(
-          [document.querySelector(".step-2")],
-          "add",
-          "process"
-        );
-        updateClass(
-          [document.querySelector(".step-3"), step4],
-          "remove",
-          "process"
-        );
-        step3.style.display = "none";
-        step4.style.pointerEvents = "auto";
-      }
-  
-      if (e.target.matches(".rb-tab .step-4")) {
-        showStep(3);
-        updateClass(
-          [document.querySelector(".step-2"), document.querySelector(".step-3")],
-          "add",
-          "active"
-        );
-        updateClass([step4], "add", "process");
-      }
-  
-      if (e.target.matches("#back-summary-button")) {
-        showStep(3);
-      }
-  
-      if (e.target.matches(".rb-tab .step-3, #back-button")) {
-        nextStep();
-        showStep(2);
-        updateClass([document.querySelector(".step-3")], "add", "process");
-        updateClass([step4], "remove", "process");
-        nextStepBtn.style.display = "block";
-        step4.style.pointerEvents = "auto";
-        step23.style.display = "none";
-  
-        if (slider && thumbnails) {
-          slider.update();
-          thumbnails.update();
-        }
-      }
     });
-  });  
+});
+
+document.querySelectorAll('.rb-tab .step-1').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelector('#step-1').style.display = 'block';
+        document.querySelector('#step-2').style.display = 'none';
+        document.querySelector('.step-2').classList.remove('process');
+        document.querySelector('.step-2').classList.remove('active');
+        document.querySelector('.step-3').classList.remove('process');
+        document.querySelector('.step-4').classList.remove('process');
+        document.querySelector('#step-3').style.display = 'none';
+        document.querySelector('.step-3').classList.remove('active');
+        document.querySelector('.step-4').style.pointerEvents = 'auto';
+        document.querySelector('#step-2-3').style.display = 'none';
+    });
+});
+
+
+document.querySelectorAll('.rb-tab .step-2').forEach(item => {
+  item.addEventListener('click', function() {
+      document.querySelector('#step-2-1').style.display = 'block';
+      document.querySelector('#step-2-2').style.display = 'none';
+      document.querySelector('.step-2').classList.add('process');
+      document.querySelector('.step-3').classList.remove('process');
+      document.querySelector('.step-3').classList.remove('active');
+      document.querySelector('#step-3').style.display = 'none';
+      document.querySelector('.step-4').classList.remove('process');
+      document.querySelector('.step-4').style.pointerEvents = 'auto';
+  });
+});
+
+
+function nextStep(){
+  document.querySelector('#step-2-3').style.display = 'none';
+if(document.querySelector('#step-2-2').style.display == 'none'){
+  document.querySelector('#step-2-1').style.display = 'none';
+  document.querySelector('#step-2-2').style.display = 'block';
+  document.querySelector('.step-2').classList.remove('process');
+  document.querySelector('.step-3').classList.add('process');
+  document.querySelector('.step-2').classList.add('active');
+}
+else{
+  document.querySelector('#step-1').style.display = 'none';
+  document.querySelector('#step-3').style.display = 'block';
+  document.querySelector('#step-2').style.display = 'none';
+  document.querySelector('.step-3').classList.remove('process');
+  document.querySelector('.step-2').classList.remove('process');
+  document.querySelector('.step-2').classList.add('active');
+  document.querySelector('.step-3').classList.add('active');
+  document.querySelector('.step-4').classList.add('process');
+}
+}
+
+
+function ringSummary(){
+  document.querySelector('#step-3').style.display = 'none';
+  document.querySelector('#step-2').style.display = 'block';
+  document.querySelector('#step-2-2').style.display = 'none';
+  document.querySelector('#step-2-1').style.display = 'none';
+  document.querySelector('#next-step').style.display = 'none';
+  document.querySelector('.step-4').style.pointerEvents = 'none';
+  document.querySelector('#step-2-3').style.display = 'block';
+  if (slider && thumbnails) {
+    slider.update();
+    thumbnails.update();
+}
+}
+
+document.querySelectorAll('.rb-tab .step-4').forEach(item => {
+  item.addEventListener('click', function() {
+    document.querySelector('#step-1').style.display = 'none';
+    document.querySelector('#step-3').style.display = 'block';
+    document.querySelector('#step-2').style.display = 'none';
+    document.querySelector('.step-3').classList.remove('process');
+    document.querySelector('.step-2').classList.remove('process');
+    document.querySelector('.step-2').classList.add('active');
+    document.querySelector('.step-3').classList.add('active');
+    document.querySelector('.step-4').classList.add('process');
+  });
+});
+
+document.querySelectorAll('#back-summary-button').forEach(item => {
+  item.addEventListener('click', function() {
+    document.querySelector('#step-2').style.display = 'none';
+    document.querySelector('#step-3').style.display = 'block';
+});
+});
+
+document.querySelectorAll('.rb-tab .step-3 , #back-button').forEach(item => {
+  item.addEventListener('click', function() {
+    nextStep();
+    document.querySelector('#step-1').style.display = 'none';
+    document.querySelector('#step-2').style.display = 'block'
+    document.querySelector('#step-3').style.display = 'none';
+    document.querySelector('.step-4').classList.remove('process');
+    document.querySelector('.step-3').classList.remove('active');
+    document.querySelector('.step-3').classList.add('process');
+    document.querySelector('#next-step').style.display = 'block';
+    document.querySelector('.step-4').style.pointerEvents = 'auto';
+    document.querySelector('#step-2-3').style.display = 'none';
+    if (slider && thumbnails) {
+      slider.update();
+      thumbnails.update();
+    }
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   let headers = document.querySelectorAll("tr.header");
