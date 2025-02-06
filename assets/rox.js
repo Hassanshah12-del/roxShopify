@@ -125,7 +125,6 @@ document.querySelectorAll('.rb-tab .step-4').forEach(item => {
   });
 });
 
-// Click event for #back-summary-button
 document.querySelectorAll('#back-summary-button').forEach(item => {
   item.addEventListener('click', function () {
       setDisplay('#step-2', 'none');
@@ -133,7 +132,6 @@ document.querySelectorAll('#back-summary-button').forEach(item => {
   });
 });
 
-// Click event for .rb-tab .step-3 and #back-button
 document.querySelectorAll('.rb-tab .step-3, #back-button').forEach(item => {
   item.addEventListener('click', function () {
       nextStep();
