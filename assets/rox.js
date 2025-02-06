@@ -282,8 +282,6 @@ function simpleTab(myBtn) {
   for (let i = 0; i < buttons.length; i++) {
       buttons[i].classList.remove("btn-active");
   }
-  
   buttons[myBtn].classList.add("btn-active");
   }
-
   simpleTab(0);
