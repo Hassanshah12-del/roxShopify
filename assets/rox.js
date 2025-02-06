@@ -47,12 +47,10 @@ function setDisplay(selectors, displayValue) {
   document.querySelectorAll(selectors).forEach(el => el.style.display = displayValue);
 }
 
-// Utility function to toggle classes
 function toggleClass(selectors, action, className) {
   document.querySelectorAll(selectors).forEach(el => el.classList[action](className));
 }
 
-// Click event for .product-list li and .rb-tab .step-2
 document.querySelectorAll('.product-list li, .rb-tab .step-2').forEach(item => {
   item.addEventListener('click', function () {
       setDisplay('#step-1', 'none');
@@ -67,7 +65,6 @@ document.querySelectorAll('.product-list li, .rb-tab .step-2').forEach(item => {
   });
 });
 
-// Click event for .rb-tab .step-1
 document.querySelectorAll('.rb-tab .step-1').forEach(item => {
   item.addEventListener('click', function () {
       setDisplay('#step-1', 'block');
@@ -78,7 +75,6 @@ document.querySelectorAll('.rb-tab .step-1').forEach(item => {
   });
 });
 
-// Click event for .rb-tab .step-2
 document.querySelectorAll('.rb-tab .step-2').forEach(item => {
   item.addEventListener('click', function () {
       setDisplay('#step-2-1', 'block');
@@ -90,7 +86,6 @@ document.querySelectorAll('.rb-tab .step-2').forEach(item => {
   });
 });
 
-// Function to handle next step logic
 function nextStep() {
   setDisplay('#step-2-3', 'none');
 
