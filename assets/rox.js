@@ -42,7 +42,6 @@ function ThumbnailPlugin(main) {
     [ThumbnailPlugin(this.slider)]
   )
 
-  // Utility function to set display property
 function setDisplay(selectors, displayValue) {
   document.querySelectorAll(selectors).forEach(el => el.style.display = displayValue);
 }
@@ -104,7 +103,6 @@ function nextStep() {
   }
 }
 
-// Function to handle ring summary
 function ringSummary() {
   setDisplay('#step-3', 'none');
   setDisplay('#step-2-2, #step-2-1, #next-step', 'none');
@@ -117,7 +115,6 @@ function ringSummary() {
   }
 }
 
-// Click event for .rb-tab .step-4
 document.querySelectorAll('.rb-tab .step-4').forEach(item => {
   item.addEventListener('click', function () {
       setDisplay('#step-1, #step-2', 'none');
