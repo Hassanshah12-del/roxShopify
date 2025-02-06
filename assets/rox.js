@@ -150,8 +150,8 @@ document.querySelectorAll('.rb-tab .step-3 , #back-button').forEach(item => {
     document.querySelector('#step-1').style.display = 'none';
     document.querySelector('#step-2').style.display = 'block'
     document.querySelector('#step-3').style.display = 'none';
-    document.querySelector('.step-4 , .step-3').classList.remove('process');
-    document.querySelector('.').classList.remove('active');
+    document.querySelector('.step-4').classList.remove('process');
+    document.querySelector('.step-3').classList.remove('active');
     document.querySelector('.step-3').classList.add('process');
     document.querySelector('#next-step').style.display = 'block';
     document.querySelector('.step-4').style.pointerEvents = 'auto';
