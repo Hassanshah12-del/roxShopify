@@ -309,18 +309,28 @@ function addToBoxesWithShift(imageSrc) {
   const boxes = document.querySelectorAll(".birthstone-selection-blocks .box");
   let images = [];
 
+  // Store current images in an array
   boxes.forEach(box => {
       let img = box.querySelector("img");
       images.push(img ? img.src : null);
   });
 
+  // Add new image at the last box, shifting others if full
   if (images.includes(null)) {
       let emptyIndex = images.indexOf(null);
       images[emptyIndex] = imageSrc;
   } else {
-      images.shift();
-      images.push(imageSrc);
+      images.shift(); // Remove first image
+      images.push(imageSrc); // Add new image at the end
   }
+
+  // Refill the boxes with updated images
+  updateBoxes(images);
+}
+
+// Function to update the boxes after changes
+function updateBoxes(images) {
+  const boxes = document.querySelectorAll(".birthstone-selection-blocks .box");
 
   boxes.forEach((box, index) => {
       box.innerHTML = "";
@@ -334,8 +344,8 @@ function addToBoxesWithShift(imageSrc) {
           closeButton.classList.add("close-btn");
           closeButton.style.display = "none"; // Initially hidden
           closeButton.addEventListener("click", function (event) {
-              event.stopPropagation(); // Prevent triggering box click
-              removeImageFromBox(box);
+              event.stopPropagation(); // Prevent box click event
+              removeImageFromBox(index);
           });
 
           box.appendChild(newImage);
@@ -343,17 +353,32 @@ function addToBoxesWithShift(imageSrc) {
       }
   });
 
-  // Attach click event to each box to show close button when clicked
+  // Attach event listener to show close button when clicking a box
   boxes.forEach(box => {
       box.addEventListener("click", function () {
           const closeBtn = box.querySelector(".close-btn");
           if (closeBtn) {
-              closeBtn.style.display = "block"; // Show close button on click
+              closeBtn.style.display = "block";
           }
       });
   });
 }
 
-function removeImageFromBox(box) {
-  box.innerHTML = ""; // Remove image and close button
+// Function to remove an image and shift other images forward
+function removeImageFromBox(index) {
+  const boxes = document.querySelectorAll(".birthstone-selection-blocks .box");
+  let images = [];
+
+  // Store current images in an array
+  boxes.forEach(box => {
+      let img = box.querySelector("img");
+      images.push(img ? img.src : null);
+  });
+
+  // Remove the selected image and shift others forward
+  images.splice(index, 1);
+  images.push(null); // Add an empty space at the end
+
+  // Update the boxes with shifted images
+  updateBoxes(images);
 }
