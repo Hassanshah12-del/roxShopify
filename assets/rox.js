@@ -330,7 +330,7 @@ function addToBoxesWithShift(imageSrc) {
           newImage.alt = "Selected Birthstone";
 
           const closeButton = document.createElement("button");
-          closeButton.innerHTML = "❌";
+          closeButton.innerHTML = "d";
           closeButton.classList.add("close-btn");
           closeButton.addEventListener("click", function () {
               removeImageFromBox(box);
