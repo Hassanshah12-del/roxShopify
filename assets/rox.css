@@ -1010,3 +1010,8 @@ div#popup-text button {
   margin-top: 30px;
 }
 
+div#popup-text img {
+  width: 100%;
+  max-width: 132px;
+}
+
