@@ -300,9 +300,9 @@ function simpleTab(myBtn) {
 
 // Close popup when clicking on background or close button
 function closePopup(event) {
-    if (event.target.id === "birthstones-popup" || event.target.classList.contains("close")) {
-        document.getElementById('birthstones-popup').style.display = 'none';
-    }
+  if (!event || event.target.id === "popup" || event.target.classList.contains("close")) {
+    document.getElementById('popup').style.display = 'none';
+}
 }
 
 
