@@ -330,15 +330,27 @@ function addToBoxesWithShift(imageSrc) {
           newImage.alt = "Selected Birthstone";
 
           const closeButton = document.createElement("button");
-          closeButton.innerHTML = "d";
+          closeButton.innerHTML = "❌";
           closeButton.classList.add("close-btn");
-          closeButton.addEventListener("click", function () {
+          closeButton.style.display = "none"; // Initially hidden
+          closeButton.addEventListener("click", function (event) {
+              event.stopPropagation(); // Prevent triggering box click
               removeImageFromBox(box);
           });
 
           box.appendChild(newImage);
           box.appendChild(closeButton);
       }
+  });
+
+  // Attach click event to each box to show close button when clicked
+  boxes.forEach(box => {
+      box.addEventListener("click", function () {
+          const closeBtn = box.querySelector(".close-btn");
+          if (closeBtn) {
+              closeBtn.style.display = "block"; // Show close button on click
+          }
+      });
   });
 }
 
