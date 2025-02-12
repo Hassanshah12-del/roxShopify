@@ -971,3 +971,9 @@ tr.table-heading th {
   width: 57px;
 }
 
+.month-color {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
