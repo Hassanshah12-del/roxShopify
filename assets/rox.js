@@ -305,15 +305,16 @@ function closePopup(event) {
 }
 
 
-function addToRing(imageSrc) {
-  const targetDiv = document.querySelector(".birthstone-selection-blocks .box");
+function addToNextAvailableBox(imageSrc) {
+  const boxes = document.querySelectorAll(".birthstone-selection-blocks .box");
 
-  // Remove previous image before adding a new one
-  targetDiv.innerHTML = "";
-
-  const newImage = document.createElement("img");
-  newImage.src = imageSrc;
-  newImage.alt = "Selected Birthstone";
-
-  targetDiv.appendChild(newImage);
+  for (let box of boxes) {
+      if (!box.hasChildNodes()) {  // Check if box is empty
+          const newImage = document.createElement("img");
+          newImage.src = imageSrc;
+          newImage.alt = "Selected Birthstone";
+          box.appendChild(newImage);
+          return;  // Stop after adding to the first empty box
+      }
+  }
 }
