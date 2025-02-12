@@ -340,7 +340,7 @@ function updateBoxes(images) {
           newImage.alt = "Selected Birthstone";
 
           const closeButton = document.createElement("button");
-          closeButton.innerHTML = "❌";
+          closeButton.innerHTML = '<svg focusable="false" width="14" height="14" viewBox="0 0 14 14"><path d="M13 13L1 1M13 1L1 13" stroke="currentColor" stroke-width="" fill="none"></path></svg>';
           closeButton.classList.add("close-btn");
           closeButton.style.display = "none"; // Initially hidden
           closeButton.addEventListener("click", function (event) {
