@@ -290,11 +290,11 @@ function simpleTab(myBtn) {
     document.getElementById('popup-text').innerHTML = content;
     document.getElementById('birthstones-popup').style.display = 'flex';
     const addButton = document.querySelector(".add-ring-btn");
-    if (addButton) {
-        addButton.addEventListener("click", function () {
-            addToNextAvailableBox(this.getAttribute("data-image"));
-        });
-    }
+        if (addButton) {
+            addButton.addEventListener("click", function () {
+                addToBoxesWithShift(this.getAttribute("data-image"));
+            });
+        }
 }
 
 // Close popup when clicking on background or close button
