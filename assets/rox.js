@@ -309,30 +309,39 @@ function addToBoxesWithShift(imageSrc) {
   const boxes = document.querySelectorAll(".birthstone-selection-blocks .box");
   let images = [];
 
-  // Collect existing images in boxes
   boxes.forEach(box => {
       let img = box.querySelector("img");
       images.push(img ? img.src : null);
   });
 
   if (images.includes(null)) {
-      // If there are empty boxes, add the new image to the first available slot
       let emptyIndex = images.indexOf(null);
       images[emptyIndex] = imageSrc;
   } else {
-      // If all boxes are full, shift left and add the new image to the last box
-      images.shift();  // Remove the first image
-      images.push(imageSrc); // Add the new image at the end
+      images.shift();
+      images.push(imageSrc);
   }
 
-  // Clear and update boxes with new images
   boxes.forEach((box, index) => {
-      box.innerHTML = ""; // Clear the box
+      box.innerHTML = "";
       if (images[index]) {
           const newImage = document.createElement("img");
           newImage.src = images[index];
           newImage.alt = "Selected Birthstone";
+
+          const closeButton = document.createElement("button");
+          closeButton.innerHTML = "❌";
+          closeButton.classList.add("close-btn");
+          closeButton.addEventListener("click", function () {
+              removeImageFromBox(box);
+          });
+
           box.appendChild(newImage);
+          box.appendChild(closeButton);
       }
   });
+}
+
+function removeImageFromBox(box) {
+  box.innerHTML = ""; // Remove image and close button
 }
