@@ -940,7 +940,7 @@ tr.table-heading th {
   align-items: center;
 }
 
-.popup-content {
+.birthstones-popup .popup-content {
   background: #fff;
   padding: 20px;
   border-radius: 4px;
@@ -950,7 +950,7 @@ tr.table-heading th {
   width: 100%;
 }
 
-.close {
+.birthstones-popup .close {
   cursor: pointer;
   float: right;
   font-size: 24px;
