@@ -977,3 +977,9 @@ tr.table-heading th {
   gap: 16px;
 }
 
+.month-color span {
+  font-size: 14px;
+  color: #292929;
+  font-weight: 700;
+}
+
