@@ -288,7 +288,7 @@ function simpleTab(myBtn) {
 
   function openPopup(content) {
     document.getElementById('popup-text').innerHTML = content;
-    document.getElementById('popup').style.display = 'flex';
+    document.getElementById('birthstones-popup').style.display = 'flex';
 }
 
 // Close popup when clicking on background or close button
