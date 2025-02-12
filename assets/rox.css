@@ -957,3 +957,9 @@ tr.table-heading th {
   border: 1px solid;
 }
 
+.birthstone-selection-blocks .box button.close-btn svg {
+  height: 10px;
+  width: 7px;
+}
+
+
