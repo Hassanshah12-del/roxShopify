@@ -950,7 +950,9 @@ tr.table-heading th {
 .birthstones-popup .close {
   cursor: pointer;
   float: right;
-  font-size: 24px;
+  font-size: 32px;
+  color: #000;
+  font-weight: 200;
 }
 
 .birthstone-selection-blocks .box button.close-btn {
