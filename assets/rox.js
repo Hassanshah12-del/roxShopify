@@ -300,14 +300,14 @@ function closePopup(event) {
 
 
 function addToRing(imageSrc) {
-  // Select the target div where the image should be appended
   const targetDiv = document.querySelector(".birthstone-selection-blocks .box");
 
-  // Create a new img element
+  // Remove previous image before adding a new one
+  targetDiv.innerHTML = "";
+
   const newImage = document.createElement("img");
   newImage.src = imageSrc;
   newImage.alt = "Selected Birthstone";
 
-  // Append the image inside the target div
   targetDiv.appendChild(newImage);
 }
