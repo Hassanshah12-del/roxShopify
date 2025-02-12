@@ -635,8 +635,8 @@
                             </button>
                         </div>
 
-                        <div id="popup" class="popup">
-                            <div class="popup-content">
+                        <div id="popup" class="popup" onclick="closePopup(event)">
+                            <div class="popup-content" onclick="event.stopPropagation();">
                                 <span class="close" onclick="closePopup()">&times;</span>
                                 <div id="popup-text"></div>
                             </div>
