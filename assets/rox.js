@@ -293,6 +293,7 @@ function simpleTab(myBtn) {
     if (addButton) {
         addButton.addEventListener("click", function () {
             addToBoxesWithShift(this.getAttribute("data-image"));
+            closePopup();
         });
     }
 }
