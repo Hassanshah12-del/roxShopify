@@ -356,9 +356,13 @@ function updateBoxes(images) {
   // Attach event listener to show close button when clicking a box
   boxes.forEach(box => {
       box.addEventListener("click", function () {
+          document.querySelectorAll(".close-btn").forEach(btn => {
+              btn.style.display = "none"; // Hide all close buttons
+          });
+
           const closeBtn = box.querySelector(".close-btn");
           if (closeBtn) {
-              closeBtn.style.display = "block";
+              closeBtn.style.display = "block"; // Show only the clicked box’s close button
           }
       });
   });
