@@ -307,22 +307,25 @@ function closePopup(event) {
 
 function addToBoxesWithShift(imageSrc) {
   const boxes = document.querySelectorAll(".birthstone-selection-blocks .box");
-  const boxCount = boxes.length;
+  let images = [];
 
-  // Collect current images
-  let images = Array.from(boxes).map(box => {
-      return box.querySelector("img") ? box.querySelector("img").src : null;
+  // Collect existing images in boxes
+  boxes.forEach(box => {
+      let img = box.querySelector("img");
+      images.push(img ? img.src : null);
   });
 
-  // Add the new image at the end
-  images.push(imageSrc);
-
-  // Keep only the latest 4 images (shift left if more than 4)
-  if (images.length > boxCount) {
-      images.shift(); // Remove the oldest image
+  if (images.includes(null)) {
+      // If there are empty boxes, add the new image to the first available slot
+      let emptyIndex = images.indexOf(null);
+      images[emptyIndex] = imageSrc;
+  } else {
+      // If all boxes are full, shift left and add the new image to the last box
+      images.shift();  // Remove the first image
+      images.push(imageSrc); // Add the new image at the end
   }
 
-  // Clear all boxes and refill with updated images
+  // Clear and update boxes with new images
   boxes.forEach((box, index) => {
       box.innerHTML = ""; // Clear the box
       if (images[index]) {
