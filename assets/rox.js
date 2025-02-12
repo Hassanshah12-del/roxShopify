@@ -288,7 +288,7 @@ function simpleTab(myBtn) {
 
 
   function openPopup(content) {
-    document.getElementById('popup-text').innerText = content;
+    document.getElementById('popup-text').innerHTML = content; 
     document.getElementById('popup').style.display = 'flex';
 }
 
