@@ -941,11 +941,13 @@ tr.table-heading th {
 }
 
 .popup-content {
-  background: white;
+  background: #fff;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 4px;
   text-align: center;
-  min-width: 300px;
+  border: 1px solid;
+  max-width: 838px;
+  width: 100%;
 }
 
 .close {
