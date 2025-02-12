@@ -286,17 +286,17 @@ function simpleTab(myBtn) {
   }
   simpleTab(0);
 
-  function openPopup(content) {
-    document.getElementById('popup-text').innerHTML = content;
-    document.getElementById('birthstones-popup').style.display = 'flex';
-    const addButton = document.querySelector(".add-ring-btn");
-    if (addButton) {
-        addButton.addEventListener("click", function () {
-            addToBoxesWithShift(this.getAttribute("data-image"));
-            closePopup();
-        });
-    }
-}
+//   function openPopup(content) {
+//     document.getElementById('popup-text').innerHTML = content;
+//     document.getElementById('birthstones-popup').style.display = 'flex';
+//     const addButton = document.querySelector(".add-ring-btn");
+//     if (addButton) {
+//         addButton.addEventListener("click", function () {
+//             addToBoxesWithShift(this.getAttribute("data-image"));
+//             closePopup();
+//         });
+//     }
+// }
 
 // Close popup when clicking on background or close button
 function closePopup(event) {
