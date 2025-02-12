@@ -513,6 +513,7 @@ main#MainContent {
   background: #F9F7F2;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .box-image {
@@ -948,3 +949,11 @@ tr.table-heading th {
   float: right;
   font-size: 24px;
 }
+
+.birthstone-selection-blocks .box button.close-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  border: 1px solid;
+}
+
