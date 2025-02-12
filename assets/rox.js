@@ -286,12 +286,14 @@ function simpleTab(myBtn) {
   }
   simpleTab(0);
 
-
   function openPopup(content) {
-    document.getElementById('popup-text').innerHTML = content; 
+    document.getElementById('popup-text').innerHTML = content;
     document.getElementById('popup').style.display = 'flex';
 }
 
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
+// Close popup when clicking on background or close button
+function closePopup(event) {
+    if (event.target.id === "popup" || event.target.classList.contains("close")) {
+        document.getElementById('popup').style.display = 'none';
+    }
 }
