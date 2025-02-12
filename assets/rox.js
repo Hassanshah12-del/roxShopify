@@ -305,7 +305,6 @@ function closePopup(event) {
 }
 }
 
-
 function addToBoxesWithShift(imageSrc) {
   const boxes = document.querySelectorAll(".birthstone-selection-blocks .box");
   let images = [];
