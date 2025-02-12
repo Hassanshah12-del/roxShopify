@@ -983,3 +983,10 @@ tr.table-heading th {
   font-weight: 700;
 }
 
+div#popup-text h2 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
