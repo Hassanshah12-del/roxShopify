@@ -285,3 +285,13 @@ function simpleTab(myBtn) {
   buttons[myBtn].classList.add("btn-active");
   }
   simpleTab(0);
+
+
+  function openPopup(content) {
+    document.getElementById('popup-text').innerText = content;
+    document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
